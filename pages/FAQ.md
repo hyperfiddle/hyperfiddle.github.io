@@ -1,0 +1,1 @@
+- "How does it work? Detail wise, honestly not sure for how much, probably up to where i can understand the big picture and confidently treat it as blackbox that perform the things with least surprise,.. e.g. things works as expected."

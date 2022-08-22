@@ -1,0 +1,39 @@
+- 4 layers
+	- Missionary - FRP for Clojure/Script
+		- convergence of design
+			- structured concurrency
+				- structured programming
+				- async/await vs callbacks
+				- composition
+					- pipelining function calls
+		- functional programming
+			- effect supervision
+			- IO monads
+		- reactive programming / FRP
+			- continuous signals, discrete streams
+			- backpressure, laziness
+		- Process supervision
+			- resource cleanup guarantees
+	- [[Photon]] - web app as a functional expression
+		- Mission – why are web programs stuck in the tarpit? accidental complexity?
+		- Problem
+			- [https://twitter.com/matthewcp/status/1545379230233526273](https://twitter.com/matthewcp/status/1545379230233526273)
+		- Composable client/server UI
+			- mark client and server regions
+			- build in network management into the language and runtime
+			- Follows the laws of fn composition
+	- HFQL – UI Modeling Language
+	- Hyperfiddle – UI Notebook for Programmers
+- Innovators dilemma
+	- start with an inconsequential problem that is adjacent to a hidden huge problem
+		- facebook, twitter
+		- web browser
+	- What are the huge problems we solve?
+		- web data sync
+		- UI
+		- CRUD apps, esp enterprise database apps
+		- tools for thought
+	- Inconsequential problems?
+		- "internal tools" / Retool
+		- airtable / graph spreadsheet (relational sheet with web data types)
+		- UI for smart contracts

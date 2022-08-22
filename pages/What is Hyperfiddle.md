@@ -14,7 +14,7 @@
 			- backpressure, laziness
 		- Process supervision
 			- resource cleanup guarantees
-	- [[Photon]] - web app as a functional expression
+	- Photon - web app as a functional expression
 		- Mission – why are web programs stuck in the tarpit? accidental complexity?
 		- Problem
 			- [https://twitter.com/matthewcp/status/1545379230233526273](https://twitter.com/matthewcp/status/1545379230233526273)
@@ -22,6 +22,7 @@
 			- mark client and server regions
 			- build in network management into the language and runtime
 			- Follows the laws of fn composition
+		- Programs are DAGs
 	- HFQL – UI Modeling Language
 	- Hyperfiddle – UI Notebook for Programmers
 - Innovators dilemma

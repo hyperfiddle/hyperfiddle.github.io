@@ -19,9 +19,6 @@
  {:block/name "aug 1st, 2022",
   :block/created-at 1659352149413,
   :block/updated-at 1659352149413}
- {:block/name "aug 22nd, 2022",
-  :block/created-at 1661197925470,
-  :block/updated-at 1661197925470}
  {:block/name "aug 3rd, 2022",
   :block/created-at 1659530233997,
   :block/updated-at 1659530233997}
@@ -70,12 +67,15 @@
  {:block/name "favorites",
   :block/created-at 1656968449302,
   :block/updated-at 1656968449302}
+ {:block/name "hyperfiddle",
+  :block/created-at 1661201394923,
+  :block/updated-at 1661201394923}
+ {:block/name "hyperfiddle docs site",
+  :block/created-at 1661199298213,
+  :block/updated-at 1661202342269}
  {:block/name "in-progress",
   :block/created-at 1656968449302,
   :block/updated-at 1656968449302}
- {:block/name "jul 10th, 2022",
-  :block/created-at 1657462301021,
-  :block/updated-at 1657462309169}
  {:block/name "jul 11th, 2022",
   :block/created-at 1657512729628,
   :block/updated-at 1657512729628}
@@ -114,7 +114,7 @@
   :block/updated-at 1656968449302}
  {:block/name "photon",
   :block/created-at 1657629200689,
-  :block/updated-at 1659708087820}
+  :block/updated-at 1661203993376}
  {:block/name "todo",
   :block/created-at 1656968449302,
   :block/updated-at 1656968449302}
@@ -126,4 +126,4 @@
   :block/updated-at 1656968449302}
  {:block/name "what is hyperfiddle",
   :block/created-at 1657462309169, 
-  :block/updated-at 1657629200690}]
+  :block/updated-at 1661202333552}]

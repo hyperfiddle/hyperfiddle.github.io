@@ -1,2 +1,24 @@
-- Programs are DAGs
-- [[FAQ]]
+- Photon is a "multitier" Clojure/Script dialect for full-stack web application development, specifically dynamic user interfaces with complex frontend/backend data sync requirements.
+	- [Multitier programming](https://en.wikipedia.org/wiki/Multitier_programming) allows functionalities that span multiple of such *tiers* (e.g. client, server) to be developed in a single compilation unit using a single programming language.
+- **Problem** The problem we set out to solve is one of composition. - much of web development is coordinating network data access and this is what Photon solves with a key capability that we call "compiler managed network" (specifically client/server data loading).
+	- scalability
+	- really, composition
+	- no overfetching or underfetching
+- Goal
+	- Declarative UI
+- **Managed Network** Photon builds streaming network capabilities natively into the programming language/runtime itself. In the same way that the JVM manages memory allocation and lifecycle, Photon's multitier VM manages network data loading. Like the JVM, Photon's optimizing runtime does a better job at producing optimal network usage than most humans can or want to do by hand.
+	- TodoMVC with 0 LOC multiplayer
+- **How it Works** Photon is implemented as a Clojure/Script userland macro:
+	- The Photon macro uses `p/client` and `p/server` hints to compile your reactive functions into separate frontend and backend target programs that are connected by websocket.
+	- The Photon compiler will analyze your program, reflect a graph of data flow from the AST, and use this data flow graph (DAG) to anticipate the remote peer's precise needs and transparently coordinate transport.
+	- The compiler flattens/optimizes the network message passing to achieve the physical minimum possible network traffic, collapsing out any unneeded round trips. Regardless of composition depth, loops, and control flow.
+	- For more info, see [UIs are Streaming DAGs](https://www.hytradboi.com/2022/uis-are-streaming-dags) (10 minute lightning talk).
+- ### "You don't need a web framework, you need a web language"
+- The result is a fully-reactive Clojure dialect for UI whose first-class reactive functions exist in a sort of quantum state where they are both on the frontend and backend simultaneously. The benefit is you don't need to think about "where" your data is (data locality) or "what color" your functions are (backend colored or frontend colored). Code as if your data is local at all times, and the Photon compiler will take care of it.
+	- Seamless control flow transfer
+- As a first-class Clojure/Script dialect, we implement the Clojure/Script analyzer infrastructure and target 100% compatibility with Clojure/Script (closures, HOFs, macros etc), thereby inheriting Clojure's platforms' ecosystem (JVM, JS, CLR) and Clojure's own vibrant ecosystem of libraries and [production users](https://clojure.org/community/companies).
+	- folder explorer
+- **Maturity** About 40 Clojure friends have onboarded onto our private technical alpha so far and we are maturing rapidly. The abstraction is rock solid, our implementation is close (ironing out bugs as we scale to heavier programs) and we are working on ergonomics and DX at this point as well as ratcheting down on the core semantics as we discover the natural idioms that emerge. Our commercial pilot (with a Series B startup) will go into production EOY.
+- **Current issues** We do not yet live up to the claim of not needing to think at all about function/data locality but we are getting there quickly as our example apps increase in maturity and we ratchet down on the semantics. We're also now working on error reporting (especially async stack traces as the entire language is reactive).
+- **Release date** We are a small team (with modest angel investor backing) so we can't afford to support our whole 800 person waitlist trying Photon all at once. We will launch when we see our alpha users successfully building production quality stuff. In the meantime, you can get into the alpha by DMing dustingetz on slack/twitter if you have a concrete project idea (especially at work).
+- **Updates** available at [https://twitter.com/dustingetz](https://twitter.com/dustingetz) and in #hyperfiddle @ clojurians.slack.com

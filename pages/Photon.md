@@ -6,6 +6,7 @@
 	- no overfetching or underfetching
 - Goal
 	- Declarative UI
+	- https://twitter.com/dustingetz/status/1520397540386091009
 - **Managed Network** Photon builds streaming network capabilities natively into the programming language/runtime itself. In the same way that the JVM manages memory allocation and lifecycle, Photon's multitier VM manages network data loading. Like the JVM, Photon's optimizing runtime does a better job at producing optimal network usage than most humans can or want to do by hand.
 	- TodoMVC with 0 LOC multiplayer
 - **How it Works** Photon is implemented as a Clojure/Script userland macro:

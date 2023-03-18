@@ -1,0 +1,12 @@
+- First run the demos
+	- ...
+- Then clone the starter app
+	- ...
+- Dev workflow / IDE setup
+	- Cursive
+		- indentation
+		- resolve thing
+		- don't auto-save
+	- use shadow hot code reloading
+	- it's not enough to send form to repl, due to how the compiler works (we can probably fix it )
+	- deep def works, println works

@@ -200,12 +200,13 @@
 
  :ref/linked-references-collapsed-threshold 50
 
- :favorites ["List of Photon demos and content" "hyperfiddle docs site" "How to take dummy notes?"]
+ :favorites ["How to take dummy notes?"]
  :publishing/all-pages-public? true
  :ui/show-brackets? false
  :feature/enable-journals? false
- :default-home {:page "Hyperfiddle Docs site"}
+ :default-home {:page "Hyperfiddle Docs"}
  :editor/logical-outdenting? false
+ :journal/page-title-format "yyyy-MM-dd"
 
  ;; any number between 0 and 1 (the greater it is the faster the changes of the next-interval of card reviews) (default 0.5)
  ;; :srs/learning-fraction 0.5

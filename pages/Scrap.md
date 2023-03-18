@@ -1,4 +1,42 @@
+- Why / mission / goals
+	- Ultra-dynamic applications have severe data sync challenges.
+	- Problem statement: the code we wish we could write
+	- list of requirements
+		- reactive
+		- distributed state
+		- local reasoning (local refactoring) / algebraic
+	- FE/BE state sync breaks function composition
+		- leads to Backend-for-Frontend pattern
+		- abstraction resistant
+	- Inspiration
+		- functional programming
+	- Goals
+		- What would it take to model an end-to-end web application — dom to database — as a pure function?
+		- What if we could build network management directly into the language, the way memory management is built into Java?
+		- What if we could eliminate network-related incidental complexity like async, latency, failure, and caching?
+	- Ideals
+		- conciliance
+		- convergence in language design
+- language
+	- "bridge the network chasm"
+	- "libraries that join FE and BE"
+	- it is running code on the client and on the server at the same file, the compiler takes care of the network for you.
+	- compiler abstracts away networking in client/server web applications, allowing you to write one body of code that blends the two.
+	- "abstract away the networking between front and back and allow you to write one body of code that blends the two"
+	- "You can write code as if the client and the server were the same, the submit of a form now can directly insert data into the database, you don't need to manually send an HTTP request to the server."
+	- Electric is a programming language (*== reactive signals Clojure DSL*). And its **compiler** can spit out full stack web apps where you don’t have to manage the BE / FE communication at all, it’s auto generated for ya.
+	- But let’s imagine Electric delivers on the promises. It will remove a whole category of tasks and issues from web development, freeing up massive amounts of engineering capacity, which in turn will bring significant business benefits. Probably in the multiple 1000s of Productivity Impact Points.
+- Photon is a full stack Clojure/Script dialect for UI that abstracts over the frontend/backend network separation, with managed client/server datasync built into the language runtime itself.
+	- Photon lets devs use plain function composition to wire up complex full-stack applications without pain, bugs, or thinking about data plumbing _ever_.
+	- Unlike existing web frameworks that treat frontend and backend separately, Hyperfiddle's “distributed dataflow” _language_ reunites frontend and backend into a single coherent reactive expression.
+	- Imagine React.js but full stack, incremental view maintenance all the way from database views to DOM views, as one streaming computation.
+- Technology
+	- We implement the Clojure/Script compiler/analyzer infrastructure to compile Clojure/Script forms to monadic DAGs, distribute the DAG over the client/server distributed system, and then emit reactive dataflow expressions.
+-
+-
+-
 - Photon is a "multitier" Clojure/Script dialect for full-stack web application development, specifically dynamic user interfaces with complex frontend/backend data sync requirements.
+  title:: Electric Clojure
 	- [Multitier programming](https://en.wikipedia.org/wiki/Multitier_programming) allows functionalities that span multiple of such *tiers* (e.g. client, server) to be developed in a single compilation unit using a single programming language.
 - **Problem** The problem we set out to solve is one of composition. - much of web development is coordinating network data access and this is what Photon solves with a key capability that we call "compiler managed network" (specifically client/server data loading).
 	- scalability
@@ -14,7 +52,7 @@
 	- The Photon compiler will analyze your program, reflect a graph of data flow from the AST, and use this data flow graph (DAG) to anticipate the remote peer's precise needs and transparently coordinate transport.
 	- The compiler flattens/optimizes the network message passing to achieve the physical minimum possible network traffic, collapsing out any unneeded round trips. Regardless of composition depth, loops, and control flow.
 	- For more info, see [UIs are Streaming DAGs](https://www.hytradboi.com/2022/uis-are-streaming-dags) (10 minute lightning talk).
-- ### "You don't need a web framework, you need a web language"
+- "You don't need a web framework, you need a web language"
 - The result is a fully-reactive Clojure dialect for UI whose first-class reactive functions exist in a sort of quantum state where they are both on the frontend and backend simultaneously. The benefit is you don't need to think about "where" your data is (data locality) or "what color" your functions are (backend colored or frontend colored). Code as if your data is local at all times, and the Photon compiler will take care of it.
 	- Seamless control flow transfer
 - As a first-class Clojure/Script dialect, we implement the Clojure/Script analyzer infrastructure and target 100% compatibility with Clojure/Script (closures, HOFs, macros etc), thereby inheriting Clojure's platforms' ecosystem (JVM, JS, CLR) and Clojure's own vibrant ecosystem of libraries and [production users](https://clojure.org/community/companies).
@@ -25,5 +63,4 @@
 	- working on error reporting (especially async stack traces as the entire language is reactive).
 	- We'll have a commercial case study in production EOY with a Series B startup design partner.
 - We do not yet live up to the claim of not needing to think at all about function/data locality but we are getting there quickly as our example apps increase in maturity and we ratchet down on the semantics.
-- **Release date** We are a small team (with modest angel investor backing) so we can't afford to support our whole 800 person waitlist trying Photon all at once. We will launch when we see our alpha users successfully building production quality stuff. In the meantime, you can get into the alpha by DMing dustingetz on slack/twitter if you have a concrete project idea (especially at work).
-- **Updates** available at [https://twitter.com/dustingetz](https://twitter.com/dustingetz) and in #hyperfiddle @ clojurians.slack.com
+- **Updates** available at [https://twitter.com/dustingetz](https://twitter.com/dustingetz) and in `#hyperfiddle` @ clojurians.slack.com

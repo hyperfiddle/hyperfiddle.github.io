@@ -12,14 +12,14 @@
 	- a Clojure -> IR (Immediate Representation) compiler
 	- implemented as a Clojure/Script macro
 	- implements clojure/script compiler & analyzer infrastructure for full compatibility with Clojure, including all special forms
-- Electric IR
+- **Electric IR**
 	- IR is the data structure or code used internally by a compiler or virtual machine to represent source code
 	- for Electric, this is "graph bytecode" for a distributed & reactive program
-- Electric VM
+- **Electric VM**
 	- a distributed VM.
 	- The VM models a computation spread across N concurrent sites (today N=2 - backend/frontend), with managed state sync.
 	- Managed network means the concrete distributed program matches the semantics of the intended abstract program as defined the source code, regardless of where the actual computation happens or how the state got synced.
-- Network planner
+- **Network planner**
 	- the part of the VM that finds the optimal cut
 	- operates on IR
 		- This is the same as Java: there are optimizations performed by the compiler and also the runtime.
@@ -29,12 +29,12 @@
 		- the compiler doesn't know everything; this is a major source of superfluous round trips today
 			- dynamic linking - virtual methods - this is how lambdas work
 	- today, we focus on correct semantics. Now that we are useful in production, we will use production learnings to implement a planner that optimizes for real world conditions.
-- Electric Site Runtime
+- **Electric Site Runtime**
 	- Platform target sites (brower, server) that participate in the distributed VM
-- Missionary Reactor
+- **Missionary Reactor**
 	- FRP engine with glitch-free propagation
 	- holds the actual runtime state of each site process
 		- server state, one reactor per websocket session
 		- client state, one reactor in the browser
 	- Java, JS implementations
-- JVM/Browser/Node
+- **JVM/Browser/Node**

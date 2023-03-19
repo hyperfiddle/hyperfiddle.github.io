@@ -1,4 +1,4 @@
-- Nav: [[Demos]] · [[Examples]] · [[Getting Started]] · [[Tutorial]] · [[Reference]] · [[Guides]] · [FAQ](Electric FAQ) · [Blog](Blog) · [[Support]]
+- **Nav:** [[Demos]] · [[Examples]] · [[Getting Started]] · [[Tutorial]] · [[Reference]] · [[Guides]] · [[Explanations]] · [FAQ](Electric FAQ) · [Blog](Blog) · [[Support]]
 -
 - Electric is a reactive Clojure DSL that simplifies full-stack web development by seamlessly merging frontend and backend code, using a **compiler** to manage the frontend/backend boundary. The compiler analyzes your unified codebase to infer the client/server boundary, and generate full-stack web apps with fully automatic network sync.
 -

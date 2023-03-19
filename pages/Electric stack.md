@@ -27,6 +27,7 @@
 - Missionary Reactor
 	- FRP engine with glitch-free propagation
 	- holds the actual runtime state of each site process
-		- websocket session state on the s
+		- server state, one reactor per websocket session
+		- client state, one reactor in the browser
 	- Java, JS implementations
 - JVM/Browser/Node

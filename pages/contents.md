@@ -3,7 +3,6 @@
 	- [[Getting Started]]
 	- [[Tutorials]]
 	- Explanations
-	  collapsed:: true
 		- How it works
 			- **Streaming lexical scope**
 			- Network planner

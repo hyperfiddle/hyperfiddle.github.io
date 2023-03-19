@@ -6,7 +6,8 @@
 - **Clojure/Script** hosts Electric Clojure/Script programs
 	- Electric is a Clojure/Script library
 	- Electric programs are defined in Clojure code files (.cljc, .clj, .cljs)
-- **Electric Server**
+- **Electric Server** = websocket server for Electric clients
+	-
 - **Electric Compiler** = a Clojure -> "Electric bytecode" compiler
 	- implemented as an ordinary Clojure macro
 	- implements clojure/script compiler & analyzer infrastructure for full compatibility with Clojure, including all special forms

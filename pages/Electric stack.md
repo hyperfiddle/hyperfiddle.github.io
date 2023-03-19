@@ -1,10 +1,10 @@
-- Electric Clojure
-	- programming language
+- **Electric Clojure**
+	- a reactive and distributed programming language
 	- define a distributed program in Clojure
-- Clojure/Script
+- **Clojure/Script**
 	- hosts Electric Clojure/Script programs
-- Electric Compiler
-	- a Clojure -> IR compiler
+- **Electric Compiler**
+	- a Clojure -> IR (Immediate Representation) compiler
 	- implemented as a Clojure/Script macro
 - Electric IR
 	- "graph bytecode" for a reactive distributed program

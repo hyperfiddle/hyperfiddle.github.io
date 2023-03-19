@@ -1,6 +1,8 @@
 - **Electric Clojure**
 	- a distributed and reactive programming language
 	- define a distributed program in Clojure
+	- targets full compatibility with Clojure/Script
+		- means you can copy/paste a Clojure expression into an Electric
 - **Clojure/Script**
 	- hosts Electric Clojure/Script programs
 - **Electric Compiler**

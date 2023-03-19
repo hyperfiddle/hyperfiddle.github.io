@@ -1,6 +1,6 @@
 - [[Documentation — Electric Clojure]]
 -
 - FAQ: What's the difference between Hyperfiddle and Electric Clojure?
-	- Hyperfiddle is a hyper-converged code playground for building cloud GUIs. coming 2024
+	- Hyperfiddle is a managed code playground for building cloud GUIs. Coming 2024!
 	- Electric Clojure is a reactive Clojure DSL that simplifies full-stack web development by seamlessly merging frontend and backend code, using a compiler to manage the frontend/backend boundary.
 -

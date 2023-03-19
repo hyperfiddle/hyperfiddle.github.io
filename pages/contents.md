@@ -5,8 +5,6 @@
 	- [[Getting Started]]
 	- [[Tutorial]] (for learning, helps noobs get started)
 	- [[Explanations]] (for understanding, provides context)
-		- Hyperfiddle vs Electric Clojure
-			- [[What is Hyperfiddle]]
 	- [[Guides]] (goal oriented, step by step solution to a specific problem)
 	- [[Electric FAQ]]
 		- https://www.reddit.com/r/Clojure/comments/ufbzp6/uis_are_streaming_dags_hyperfiddlephoton_a/

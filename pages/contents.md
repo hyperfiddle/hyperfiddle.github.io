@@ -12,7 +12,20 @@
 		- How to reason about network transfers
 	- Guides
 		- Custom transit handlers
-		- How do I run a side effect when a dom node updates (so I can ask highlight.js to highlight the current node again)
+		- How do I run a dom side effect when something changes?
+			- I’d like to use the highlight.js library and looking for a way to mutate a DOM element after it has been mounted.
+			- This works:
+				- ```
+				  (dom/code (dom/props {:class "language-clojure"})
+				                     (dom/text "{:a :b}")
+				                     (highlight/highlightElement dom/node))
+				  ```
+			- but this doesn't:
+				- ```
+				  (dom/code (dom/props {:class "language-clojure"})
+				                     (dom/text (e/server (pr-str project)))
+				                     (highlight/highlightElement dom/node))
+				  ```
 	- [[Reference]]
 	- [[Electric FAQ]]
 	- [[Examples]]

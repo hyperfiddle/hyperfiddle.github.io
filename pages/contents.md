@@ -5,7 +5,6 @@
 	- [[Getting Started]]
 	- [[Tutorial]] (for learning, helps noobs get started)
 	- [[Explanations]] (for understanding, provides context)
-	  collapsed:: true
 		- Hyperfiddle vs Electric Clojure
 			- [[What is Hyperfiddle]]
 	- [[Guides]] (goal oriented, step by step solution to a specific problem)

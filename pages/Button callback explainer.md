@@ -1,5 +1,4 @@
-- [Slack question](https://clojurians.slack.com/archives/C7Q9GSHFV/p1678988187329129)
-- Question: Hi, is this code valid:
+- [Slack question](https://clojurians.slack.com/archives/C7Q9GSHFV/p1678988187329129): Hi, is this code valid:
 	- ```clojure
 	  (dom/on "click" (e/fn [e]
 	                    (.preventDefault e)

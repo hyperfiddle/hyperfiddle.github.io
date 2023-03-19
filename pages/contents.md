@@ -5,10 +5,10 @@
 	- [[Tutorial]] (for learning, helps noobs get started)
 	- [[Reference]] (information, describes machinery, accurate and complete)
 	- [[Explanations]] (for understanding, provides context)
-	  collapsed:: true
 		- [UIs are streaming DAGs (10min video + transcript) (2022)](https://hyperfiddle.notion.site/UIs-are-streaming-DAGs-e181461681a8452bb9c7a9f10f507991)
 		- [You don't need a web framework, you need a web language (2021)](https://hyperfiddle.notion.site/Reactive-Clojure-You-don-t-need-a-web-framework-you-need-a-web-language-44b5bfa526be4af282863f34fa1cfffc)
 		- Triage
+			- [[What is Hyperfiddle]]
 		- How it works
 			- **Streaming lexical scope**
 			- Network planner
@@ -28,4 +28,3 @@
 	- Demos
 		- [Hyperfiddle live-modeling POC](https://hyperfiddle.notion.site/Hyperfiddle-live-modeling-POC-3bdef327be3a425c867814c7d8919fe9)
 		- [Photon treeview](https://hyperfiddle.notion.site/Photon-treeview-4664bff9bd5b4e7897a1dddf641c344c)
-- [[What is Hyperfiddle]]

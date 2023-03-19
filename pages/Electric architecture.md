@@ -14,16 +14,16 @@
 - **Electric VM** = a distributed & reactive VM
 	- The VM models a computation spread across N concurrent sites (today N=2 - backend/frontend), with managed state sync.
 	- Managed network means the concrete distributed program matches the semantics of the intended abstract program as defined the source code, regardless of where the actual computation happens or how the state got synced.
-- **Network planner**
-	- the part of the VM that finds the optimal cut
+- **Network planner** = the part of the VM that finds the optimal cut
 	- operates on IR
 		- This is the same as Java: there are optimizations performed by the compiler and also the runtime.
 		- PG as a query planner to choose the fastest query
 		- Electric has a network planner to choose the optimal network transfers
-	- the cut is computed at compile time, but will be runtime in the future
-		- the compiler doesn't know everything; this is a major source of superfluous round trips today
+	- today the cut is computed at compile time, but will be runtime in the future
+		- the compiler doesn't know everything; this is the main source of superfluous round trips today
 			- dynamic linking - virtual methods - this is how lambdas work
-	- today, we focus on correct semantics. Now that we are useful in production, we will use production learnings to implement a planner that optimizes for real world conditions.
+	- today, we focus on correct language semantics
+	- Now that we are useful in production, we will use production learnings to implement a planner that optimizes for real world conditions.
 - **Electric Site Runtime**
 	- Platform target sites (brower, server) that participate in the distributed VM
 - **Missionary Reactor**

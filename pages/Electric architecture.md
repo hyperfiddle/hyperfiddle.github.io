@@ -7,7 +7,8 @@
 	- Electric is a Clojure/Script library
 	- Electric programs are defined in Clojure code files (.cljc, .clj, .cljs)
 - **Electric Server** = websocket server for Electric clients
-	-
+	- Today supports Jetty 9 and Jetty 10
+	- ring-compatible
 - **Electric Compiler** = a Clojure -> "Electric bytecode" compiler
 	- implemented as an ordinary Clojure macro
 	- implements clojure/script compiler & analyzer infrastructure for full compatibility with Clojure, including all special forms

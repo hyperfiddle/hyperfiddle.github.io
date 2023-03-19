@@ -22,8 +22,9 @@
 	- today the cut is computed at compile time, but will be runtime in the future
 		- the compiler doesn't know everything; this is the main source of superfluous round trips today
 			- dynamic linking - virtual methods - this is how lambdas work
-	- today, we focus on correct language semantics
-	- Now that we are useful in production, we will use production learnings to implement a planner that optimizes for real world conditions.
+	- today, we focus on correct language semantics over optimal network topology. Now that we are useful in production, we will use production learnings to implement a planner that optimizes for real world conditions.
+		- it is already quite good in practice
+		- the virtual scroll demo streams thousands of
 - **Electric Site Runtime**
 	- Platform target sites (brower, server) that participate in the distributed VM
 - **Missionary Reactor**

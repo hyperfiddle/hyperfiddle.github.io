@@ -1,4 +1,5 @@
 - Hyperfiddle is a hyper-converged code playground for building cloud GUIs.
+	- this is a product
 	- not yet released!
 - Electric Clojure is a fullstack signals DSL with fine-grained reactive network.
 	- https://github.com/hyperfiddle/electric

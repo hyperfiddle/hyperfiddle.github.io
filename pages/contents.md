@@ -1,5 +1,5 @@
-- [[Hyperfiddle Docs]]
-- [[Electric Clojure]]
+- [[Hyperfiddle Documentation]]
+- [[Electric Clojure docs]]
 	- [[Demos]] (marketing, showcase cool things)
 	- [[Examples]] (learning oriented)
 	- [[Getting Started]]

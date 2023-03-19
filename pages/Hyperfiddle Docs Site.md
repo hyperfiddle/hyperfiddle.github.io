@@ -3,5 +3,4 @@
 	- https://www.hyperfiddle.net/
 - Electric Clojure is a reactive Clojure DSL that simplifies full-stack web development by seamlessly merging frontend and backend code, using a compiler to manage the frontend/backend boundary.
 	- https://github.com/hyperfiddle/electric
-	- [[Electric Clojure docs]]
--
+	- [[Documentation — Electric Clojure]]

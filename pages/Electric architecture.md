@@ -9,11 +9,11 @@
 		- Electric programs are defined in Clojure code files (.cljc, .clj, .cljs)
 		- the Electric compiler is implemented as an ordinary Clojure macro
 - **Electric Compiler**
-	- a Clojure -> IR (Immediate Representation) compiler
+	- a Clojure -> "Electric bytecode" compiler
 	- implemented as a Clojure/Script macro
 	- implements clojure/script compiler & analyzer infrastructure for full compatibility with Clojure, including all special forms
-- **Electric IR**
-	- IR is the data structure or code used internally by a compiler or virtual machine to represent source code
+- **Electric bytecode**
+	- This is an Intermediate Representation) is the data structure or code used internally by a compiler or virtual machine to represent source code
 	- for Electric, this is "graph bytecode" for a distributed & reactive program
 - **Electric VM**
 	- a distributed VM.

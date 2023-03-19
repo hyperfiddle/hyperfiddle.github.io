@@ -7,13 +7,9 @@
 	- [[Explanations]] (for understanding, provides context)
 	- [[Guides]] (goal oriented, step by step solution to a specific problem)
 	- [[Electric FAQ]]
-		- https://www.reddit.com/r/Clojure/comments/ufbzp6/uis_are_streaming_dags_hyperfiddlephoton_a/
-		- https://www.reddit.com/r/Clojure/comments/uhdak7/uis_are_streaming_dags/
-		- https://www.reddit.com/r/Clojure/comments/wo43rw/clojure_single_codebase/
-		- network unreliability https://www.reddit.com/r/Clojure/comments/vizdcc/hyperfiddlephoton_progress_update/
-		- https://www.reddit.com/r/Clojure/comments/11ot83k/libraries_that_join_front_and_back_end/
-		- https://www.reddit.com/r/Clojure/comments/wejzdt/hyperfiddle_compiler_managed_network_connections/
-		- https://fullctxdev.substack.com/p/weekly-tech-hype-4
+		- FAQ: What's the difference between Hyperfiddle and Electric Clojure?
+			- Hyperfiddle is a managed code playground for building cloud GUIs. Coming 2024!
+			- Electric Clojure is a reactive Clojure DSL that simplifies full-stack web development by seamlessly merging frontend and backend code, using a compiler to manage the frontend/backend boundary.
 	- [[Reference]] (information, describes machinery, accurate and complete)
 	- [[Blog]]
 	- [[Support]]

@@ -180,3 +180,10 @@
 		- this is fine and probably the end state
 - [[Deployment FAQ]]
 - Triage
+	- https://www.reddit.com/r/Clojure/comments/ufbzp6/uis_are_streaming_dags_hyperfiddlephoton_a/
+	- https://www.reddit.com/r/Clojure/comments/uhdak7/uis_are_streaming_dags/
+	- https://www.reddit.com/r/Clojure/comments/wo43rw/clojure_single_codebase/
+	- network unreliability https://www.reddit.com/r/Clojure/comments/vizdcc/hyperfiddlephoton_progress_update/
+	- https://www.reddit.com/r/Clojure/comments/11ot83k/libraries_that_join_front_and_back_end/
+	- https://www.reddit.com/r/Clojure/comments/wejzdt/hyperfiddle_compiler_managed_network_connections/
+	- https://fullctxdev.substack.com/p/weekly-tech-hype-4

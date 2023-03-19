@@ -4,12 +4,11 @@
 	- targets full compatibility with Clojure/Script
 		- means you can copy/paste a Clojure expression into an Electric expression and the expression will evaluate to the same result
 - **Clojure/Script** hosts Electric Clojure/Script programs
-	-
 	- Electric is a Clojure/Script library
-		- Electric programs are defined in Clojure code files (.cljc, .clj, .cljs)
-		- the Electric compiler is implemented as an ordinary Clojure macro
+	- Electric programs are defined in Clojure code files (.cljc, .clj, .cljs)
+- **Electric Server**
 - **Electric Compiler** = a Clojure -> "Electric bytecode" compiler
-	- implemented as a Clojure/Script macro
+	- implemented as an ordinary Clojure macro
 	- implements clojure/script compiler & analyzer infrastructure for full compatibility with Clojure, including all special forms
 - **Electric bytecode** = "graph bytecode" for a distributed & reactive program
 - **Electric VM** = a distributed & reactive VM

@@ -1,5 +1,6 @@
 - [[Hyperfiddle Docs]]
 - [[Electric Clojure]]
+	- [[Demos]] (marketing, showcase cool things)
 	- [[Examples]] (learning oriented)
 	- [[Getting Started]]
 	- [[Tutorial]] (for learning, helps noobs get started)
@@ -27,6 +28,3 @@
 		- https://www.reddit.com/r/Clojure/comments/wejzdt/hyperfiddle_compiler_managed_network_connections/
 		- https://fullctxdev.substack.com/p/weekly-tech-hype-4
 	- [[Blog]]
-	- Demos (marketing, showcase cool things)
-		- [Hyperfiddle live-modeling POC](https://hyperfiddle.notion.site/Hyperfiddle-live-modeling-POC-3bdef327be3a425c867814c7d8919fe9)
-		- [Photon treeview](https://hyperfiddle.notion.site/Photon-treeview-4664bff9bd5b4e7897a1dddf641c344c)

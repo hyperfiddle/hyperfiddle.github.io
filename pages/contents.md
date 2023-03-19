@@ -1,10 +1,10 @@
 - [[Documentation — Electric Clojure]]
 	- [[Demos]] (marketing showcase)
-	- [[Examples]] (for learning)
+	- [[Examples]] (for learning quickly)
 	- [[Getting Started]]
-	- [[Tutorial]] (for learning, helps noobs get started)
-	- [[Explanations]] (for understanding, provides context)
-	- [[Guides]] (goal oriented, step by step solution to a specific problem)
+	- [[Tutorial]] (for learning slowly)
+	- [[Explanations]] (for deeper understanding)
+	- [[Guides]] (specific solutions)
 	- [[Electric FAQ]]
 	- [[Reference]] (accurate and complete details)
 	- [[Blog]]

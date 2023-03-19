@@ -3,4 +3,4 @@
 - https://fullctxdev.substack.com/p/weekly-tech-hype-4
 - [r/clojure: Clojure Single Codebase](https://www.reddit.com/r/Clojure/comments/wo43rw/clojure_single_codebase/ik91szn/)
 - [Compiler Managed Network Connections (video)](https://www.reddit.com/r/Clojure/comments/wejzdt/hyperfiddle_compiler_managed_network_connections/)
-- [r/clojure: Hyperfiddle/Photon progress update](https://www.reddit.com/r/Clojure/comments/vizdcc/hyperfiddlephoton_progress_update/)
+- [Photon progress update — June 2022](https://hyperfiddle.notion.site/Photon-progress-June-2022-57aee367c20e45b3b80366d1abe4fbc3)

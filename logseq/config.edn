@@ -204,7 +204,7 @@
  :publishing/all-pages-public? true
  :ui/show-brackets? false
  :feature/enable-journals? false
- :default-home {:page "Hyperfiddle Docs Site"}
+ :default-home {:page "Contents"}
  :editor/logical-outdenting? false
  :journal/page-title-format "yyyy-MM-dd"
  :editor/preferred-pasting-file? true

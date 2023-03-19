@@ -1,7 +1,6 @@
 - Hyperfiddle is a hyper-converged code playground for building cloud GUIs.
 	- this is a managed product
 	- not yet released, coming 2024
-- is a reactive Clojure DSL for full-stack web UI, with fine-grained reactive network
 - [[Electric Clojure]] is a reactive Clojure DSL that simplifies full-stack web development by seamlessly merging frontend and backend code, using a **compiler** to manage the frontend/backend boundary.
 	- https://github.com/hyperfiddle/electric
 -

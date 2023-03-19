@@ -1,4 +1,5 @@
 - Custom transit handlers
 - [[How do I run a dom side effect when something changes?]]
+- SImple router
 - [[Deployment]]
 - [[Debugging]]

@@ -5,6 +5,9 @@
 	- [[Getting Started]]
 	- [[Tutorial]] (for learning, helps noobs get started)
 	- [[Explanations]] (for understanding, provides context)
+	  collapsed:: true
+		- Hyperfiddle vs Electric Clojure
+			- [[What is Hyperfiddle]]
 	- [[Guides]] (goal oriented, step by step solution to a specific problem)
 	- [[Reference]] (information, describes machinery, accurate and complete)
 	- [[Electric FAQ]]
@@ -16,3 +19,4 @@
 		- https://www.reddit.com/r/Clojure/comments/wejzdt/hyperfiddle_compiler_managed_network_connections/
 		- https://fullctxdev.substack.com/p/weekly-tech-hype-4
 	- [[Blog]]
+	- [[Support]]

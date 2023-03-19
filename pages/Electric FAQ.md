@@ -1,3 +1,6 @@
+- What's the difference between Hyperfiddle and Electric Clojure?
+	- [Hyperfiddle](https://www.hyperfiddle.net/) is a managed code playground for building cloud GUIs. Coming 2024!
+	- Electric Clojure is a reactive Clojure DSL that simplifies full-stack web development by seamlessly merging frontend and backend code, using a compiler to manage the frontend/backend boundary.
 - Beginner FAQ
   title:: Electric FAQ
   collapsed:: true

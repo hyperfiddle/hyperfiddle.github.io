@@ -15,5 +15,3 @@
 	- **Fully Reactive**: Electric integrates reactivity directly into the programming language itself. Reactive-if, reactive-for, reactive try/catch. When everything is reactive, it feels like nothing is reactive. No observables! No async types! De-load your mind and focus on writing clean and concise code.
 	- **Multiplayer-native:** Develop real-time multiplayer applications without any extra effort. The Electric reactivity graph can contain shared server state, which means that every application is automatically multiplayer-enabled, requiring no additional lines of code.
 	- **Leverages the power of Clojure:** By extending Clojure, Electric inherits all of the language's powerful features, such as seamless Java and JavaScript interoperability, immutability, functional programming, cross-platform code sharing, and concise syntax, to create an expressive and productive full-stack web development experience.
--
-- Getting Started

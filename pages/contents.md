@@ -6,8 +6,6 @@
 	- [[Reference]] (information, describes machinery, accurate and complete)
 	- [[Explanations]] (for understanding, provides context)
 		- [UIs are streaming DAGs (10min video + transcript)](https://hyperfiddle.notion.site/UIs-are-streaming-DAGs-e181461681a8452bb9c7a9f10f507991)
-			- [r/clojure: UIs are Streaming DAGs (video)](https://www.reddit.com/r/Clojure/comments/ufbzp6/uis_are_streaming_dags_hyperfiddlephoton_a/) and [repost](https://www.reddit.com/r/Clojure/comments/uhdak7/uis_are_streaming_dags/)
-		-
 		- How it works
 			- **Streaming lexical scope**
 			- Network planner
@@ -16,5 +14,7 @@
 		- How to reason about network transfers
 	- [[Guides]] (goal oriented, step by step solution to a specific problem)
 	- [[Electric FAQ]]
+		- https://www.reddit.com/r/Clojure/comments/ufbzp6/uis_are_streaming_dags_hyperfiddlephoton_a/
+		- https://www.reddit.com/r/Clojure/comments/uhdak7/uis_are_streaming_dags/
 	- [[Blog]]
 - [[What is Hyperfiddle]]

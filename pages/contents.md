@@ -1,4 +1,3 @@
-- [[Hyperfiddle Docs Site]]
 - [[Documentation — Electric Clojure]]
 	- [[Demos]] (marketing, showcase cool things)
 	- [[Examples]] (learning oriented)

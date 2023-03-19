@@ -22,5 +22,8 @@
 	    (dom/text (e/server (pr-str project)))
 	    (highlight! dom/node project)) ; establish reactive dependency on project
 	  ```
-	- Perhaps we should include a macro for this, something like
-		- `(e/re-run! (highlight/highlightElement dom/node) project)`
+	-
+- Perhaps we should include a macro for this, something like
+	- `(e/re-run! (highlight/highlightElement dom/node) project)`
+- which macroexpands something like
+	- `((fn [project] (highlight/highlightElement dom/node)) project)`

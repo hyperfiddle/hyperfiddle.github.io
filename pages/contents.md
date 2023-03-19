@@ -1,7 +1,8 @@
 - [[Hyperfiddle Docs]]
 - [[Electric Clojure]]
+	- [[Examples]]
 	- [[Getting Started]]
-	- [[Tutorials]] (for learning, helps noobs get started)
+	- [[Tutorial]] (for learning, helps noobs get started)
 	- Explanations (for understanding, provides context)
 		- How it works
 			- **Streaming lexical scope**
@@ -9,10 +10,9 @@
 				- Electric Clojure's network planner understands closures, loops, and deeply nested function calls, making it easier to manage client and server scope bindings.
 		- [[Button callback explainer]]
 		- How to reason about network transfers
-	- [[Guides]] (goal oriented, sol)
-	- [[Reference]]
+	- [[Guides]] (goal oriented, step by step solution to a specific problem)
+	- [[Reference]] (information, describes machinery, accurate and complete)
 	- [[Electric FAQ]]
-	- [[Examples]]
 - [[What is Hyperfiddle]]
 - [[Blog]]
 	-

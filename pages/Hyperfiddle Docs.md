@@ -1,5 +1,4 @@
 - [[Electric Clojure]]
 - Hyperfiddle vs Electric Clojure
 	- [[What is Hyperfiddle]]
-- Blog
 - [[Support]]

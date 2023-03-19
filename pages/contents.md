@@ -4,16 +4,9 @@
 	- [[Examples]] (learning oriented)
 	- [[Getting Started]]
 	- [[Tutorial]] (for learning, helps noobs get started)
-	- [[Reference]] (information, describes machinery, accurate and complete)
 	- [[Explanations]] (for understanding, provides context)
-		- ClojureScript compatibility
-		- How it works
-			- **Streaming lexical scope**
-			- Network planner
-				- Electric Clojure's network planner understands closures, loops, and deeply nested function calls, making it easier to manage client and server scope bindings.
-		- [[Button callback explainer]]
-		- How to reason about network transfers
 	- [[Guides]] (goal oriented, step by step solution to a specific problem)
+	- [[Reference]] (information, describes machinery, accurate and complete)
 	- [[Electric FAQ]]
 		- https://www.reddit.com/r/Clojure/comments/ufbzp6/uis_are_streaming_dags_hyperfiddlephoton_a/
 		- https://www.reddit.com/r/Clojure/comments/uhdak7/uis_are_streaming_dags/

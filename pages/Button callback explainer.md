@@ -1,6 +1,24 @@
 - https://clojurians.slack.com/archives/C7Q9GSHFV/p1678988187329129
--
--
+- Question: Hi, is this code valid:
+	- ```clojure
+	  (dom/on "click" (e/fn [e]
+	                    (.preventDefault e)
+	                    (try
+	                      (e/server
+	                        (e/offload
+	                          #(let [foo "foo"]
+	                            (prn "BAZ")
+	                            (Thread/sleep 10000)
+	                            (prn "FOO")
+	                            foo)))
+	                       (catch Pending _
+	                         (swap! !state assoc :status :submited)
+	                         (e/on-unmount #(swap! !state assoc :status :idle))))
+	  ```
+	- I never see the `FOO` print. Like if the `Thread/sleep` was ignored. I don’t understand why.
+- What's happening
+	- dom/on is listening for Pending to know when the callback has successfully run on the server
+	- don't silence the Pending exception inside the callback and it will work. Meaning, don't catch and discard (if you catch here you must rethrow)
 - in this case the try/catch is not needed at all. When the event handler finishes it is unmounted, so you can use on-unmount
 	- ```clojure
 	  (e/defn Toggle []

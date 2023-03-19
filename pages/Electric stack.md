@@ -1,5 +1,5 @@
 - **Electric Clojure**
-	- a reactive and distributed programming language
+	- a distributed and reactive programming language
 	- define a distributed program in Clojure
 - **Clojure/Script**
 	- hosts Electric Clojure/Script programs
@@ -7,7 +7,8 @@
 	- a Clojure -> IR (Immediate Representation) compiler
 	- implemented as a Clojure/Script macro
 - Electric IR
-	- "graph bytecode" for a reactive distributed program
+	- IR is the data structure or code used internally by a compiler or virtual machine to represent source code
+	- for Electric, this is "graph bytecode" for a distributed & reactive program
 - Electric VM
 	- a distributed VM.
 	- The VM models a computation spread across N concurrent sites (today N=2 - backend/frontend), with managed state sync.

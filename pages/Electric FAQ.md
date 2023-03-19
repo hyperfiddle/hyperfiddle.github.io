@@ -2,10 +2,8 @@
   title:: Electric FAQ
   collapsed:: true
 	- To a noob like me, can someone explain what joining the frontend and backend means? What is meant by abstracting the networking between frontend and backend?
-	  collapsed:: true
 		- https://www.reddit.com/r/Clojure/comments/11ot83k/libraries_that_join_front_and_back_end/
 	- I don't get it, how is it different than X
-	  collapsed:: true
 		- I think I fail to see the advantage in the example given. Is the point that there's a server side call attached to the UI component directly? How is this any different than what can already be done with old school full stack like Rails or even smaller libraries like Sinatra/Flask.
 		- PHP doesn't reactively and selectively propagate changes between client and server, nor would it be feasible to write such a library in PHP itself. You could maybe achieve something similar with code generation of PHP and JS.
 		- PHP lets you have a piece of server code that can see the local variables of the client code it's enclosed in? And it's all reactive? That's amazing!
@@ -180,5 +178,4 @@
 		- no eval, no dynamic linking
 		- future: JIT, dynamic linking (means do more network planning at runtime - like JVM)
 		- this is fine and probably the end state
-- Deployment
-	-
+- [[Deployment FAQ]]

@@ -1,5 +1,6 @@
 - Beginner FAQ
   title:: Electric FAQ
+  collapsed:: true
 	- To a noob like me, can someone explain what joining the frontend and backend means? What is meant by abstracting the networking between frontend and backend?
 	  collapsed:: true
 		- https://www.reddit.com/r/Clojure/comments/11ot83k/libraries_that_join_front_and_back_end/
@@ -9,6 +10,7 @@
 		- PHP doesn't reactively and selectively propagate changes between client and server, nor would it be feasible to write such a library in PHP itself. You could maybe achieve something similar with code generation of PHP and JS.
 		- PHP lets you have a piece of server code that can see the local variables of the client code it's enclosed in? And it's all reactive? That's amazing!
 - HN FAQ
+  collapsed:: true
 	- Objection: Separation of concerns?
 	  collapsed:: true
 		- code organization
@@ -146,6 +148,7 @@
 	  collapsed:: true
 		- https://clojurians.slack.com/archives/C7Q9GSHFV/p1678979540476409
 - Clojurist FAQ
+  collapsed:: true
 	- Hiccup
 	  collapsed:: true
 		- I think once it has a bit more reagent/hiccup support I could see myself plugging this into an existing project I'm working on for sections I want "live."  I could see using electric as my main websocket backend, running alongside my existing backend instead of going through the hassle of using sente and a mix of re-frame events/subs.

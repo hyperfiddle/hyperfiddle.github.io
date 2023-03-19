@@ -11,8 +11,8 @@
 		- [[Button callback explainer]]
 		- How to reason about network transfers
 	- Guides
-	  collapsed:: true
 		- Custom transit handlers
+		-
 	- [[Reference]]
 	- [[Electric FAQ]]
 	- [[Examples]]

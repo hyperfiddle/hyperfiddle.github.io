@@ -10,10 +10,7 @@
 				- Electric Clojure's network planner understands closures, loops, and deeply nested function calls, making it easier to manage client and server scope bindings.
 		- [[Button callback explainer]]
 		- How to reason about network transfers
-	- Guides
-		- Custom transit handlers
-		- [[How do I run a dom side effect when something changes?]]
-		- [[Deployment]]
+	- [[Guides]]
 	- [[Reference]]
 	- [[Electric FAQ]]
 	- [[Examples]]

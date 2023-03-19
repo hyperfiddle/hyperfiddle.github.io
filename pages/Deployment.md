@@ -1,1 +1,6 @@
 - Also I though [fly.io](http://fly.io/) was always distributed? Do they have options for “traditional” deployment
+	- As i understand it, fly lets you choose which city you deploy in, and the idea is at scale you deploy dozens of "flyweight" instances spread across the globe
+	- global state is now an issue, you'd need to have a central database or other state store in the cloud that all the flys connect to
+	- if you choose a single fly instance in us east, and it happens that fly's datacenter in us east is 2ms away from AWS, that would feel like a traditional setup for your purposes iiuc
+	- Or you can just store your state in fly since you don't currently care about durability (meaning you lose state on restart)
+-

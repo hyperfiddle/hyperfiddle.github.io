@@ -1,0 +1,1 @@
+- Also I though [fly.io](http://fly.io/) was always distributed? Do they have options for “traditional” deployment

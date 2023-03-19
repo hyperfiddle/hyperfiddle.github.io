@@ -2,4 +2,4 @@
 - [You don't need a web framework, you need a web language (2021)](https://hyperfiddle.notion.site/Reactive-Clojure-You-don-t-need-a-web-framework-you-need-a-web-language-44b5bfa526be4af282863f34fa1cfffc)
 - [Electric progress update – Dec 2022](https://hyperfiddle.notion.site/Electric-progress-update-Dec-2022-5416dda526e24e5ab7ccb7eb48c797ed)
 - [Photon progress update — June 2022](https://hyperfiddle.notion.site/Photon-progress-June-2022-57aee367c20e45b3b80366d1abe4fbc3)
--
+- [Hyperfiddle progress update — Feb 2023](https://hyperfiddle.notion.site/Hyperfiddle-progress-update-Feb-2023-8cc45f9da47c4719bb16851d129e3a3d)

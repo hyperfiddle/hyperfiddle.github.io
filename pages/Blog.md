@@ -1,5 +1,3 @@
-- [HN: UIs are Streaming DAGs (video)](https://news.ycombinator.com/item?id=31217448)
-	- [r/clojure: UIs are Streaming DAGs (video)](https://www.reddit.com/r/Clojure/comments/ufbzp6/uis_are_streaming_dags_hyperfiddlephoton_a/) and [repost](https://www.reddit.com/r/Clojure/comments/uhdak7/uis_are_streaming_dags/)
 - [HN: Reactive Clojure](https://news.ycombinator.com/item?id=28630209)
 - https://www.reddit.com/r/Clojure/comments/11ot83k/libraries_that_join_front_and_back_end/
 - https://fullctxdev.substack.com/p/weekly-tech-hype-4

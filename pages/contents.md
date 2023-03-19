@@ -3,7 +3,9 @@
 	- [[Examples]]
 	- [[Getting Started]]
 	- [[Tutorial]] (for learning, helps noobs get started)
-	- Explanations (for understanding, provides context)
+	- [[Reference]] (information, describes machinery, accurate and complete)
+	- [[Explanations]] (for understanding, provides context)
+		-
 		- How it works
 			- **Streaming lexical scope**
 			- Network planner
@@ -11,8 +13,6 @@
 		- [[Button callback explainer]]
 		- How to reason about network transfers
 	- [[Guides]] (goal oriented, step by step solution to a specific problem)
-	- [[Reference]] (information, describes machinery, accurate and complete)
 	- [[Electric FAQ]]
+	- [[Blog]]
 - [[What is Hyperfiddle]]
-- [[Blog]]
-	-

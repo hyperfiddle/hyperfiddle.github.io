@@ -9,7 +9,6 @@
 		- Hyperfiddle vs Electric Clojure
 			- [[What is Hyperfiddle]]
 	- [[Guides]] (goal oriented, step by step solution to a specific problem)
-	- [[Reference]] (information, describes machinery, accurate and complete)
 	- [[Electric FAQ]]
 		- https://www.reddit.com/r/Clojure/comments/ufbzp6/uis_are_streaming_dags_hyperfiddlephoton_a/
 		- https://www.reddit.com/r/Clojure/comments/uhdak7/uis_are_streaming_dags/
@@ -18,5 +17,6 @@
 		- https://www.reddit.com/r/Clojure/comments/11ot83k/libraries_that_join_front_and_back_end/
 		- https://www.reddit.com/r/Clojure/comments/wejzdt/hyperfiddle_compiler_managed_network_connections/
 		- https://fullctxdev.substack.com/p/weekly-tech-hype-4
+	- [[Reference]] (information, describes machinery, accurate and complete)
 	- [[Blog]]
 	- [[Support]]

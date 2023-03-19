@@ -24,7 +24,7 @@
 			- dynamic linking - virtual methods - this is how lambdas work
 	- today, we focus on correct language semantics over optimal network topology. Now that we are useful in production, we will use production learnings to implement a planner that optimizes for real world conditions.
 		- it is already quite good in practice
-		- the virtual scroll demo streams thousands of
+		- the demo of virtual scroll over node_modules streams thousands of records between client/server as you drag the scrollbar, it feels great
 - **Electric Site Runtime**
 	- Platform target sites (brower, server) that participate in the distributed VM
 - **Missionary Reactor**

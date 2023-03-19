@@ -1,6 +1,27 @@
-- Electric Clojure (programming language) -> define a distributed program in Clojure
-- Clojure/Script – hosts Electric Clojure/Script programs
-- Electric Compiler: a Clojure -> IR compiler (implemented as a Clojure/Script macro)
-- Electric IR - "graph bytecode" for a reactive distributed program
-- Electric VM - a distributed VM. The VM models a computation spread across N concurrent sites (today N=2 - backend/frontend), with managed state sync. Managed network means the concrete distributed program matches the semantics of the intended abstract program as defined the source code, regardless of where the actual computation happens or how the state got synced.
+- Electric Clojure
+	- programming language
+	- define a distributed program in Clojure
+- Clojure/Script
+	- hosts Electric Clojure/Script programs
+- Electric Compiler
+	- a Clojure -> IR compiler
+	- implemented as a Clojure/Script macro
+- Electric IR
+	- "graph bytecode" for a reactive distributed program
+- Electric VM
+	- a distributed VM. The VM models a computation spread across N concurrent sites (today N=2 - backend/frontend), with managed state sync. Managed network means the concrete distributed program matches the semantics of the intended abstract program as defined the source code, regardless of where the actual computation happens or how the state got synced.
 - Network planner - the part of the VM that finds the optimal cut
+  collapsed:: true
+	- operates on IR - This is the same as Java - there are optimizations performed by the compiler and also the runtime.
+		- PG as a query planner to choose the fastest query
+		- Electric has a network planner to choose the optimal network transfers
+	- the cut is computed at compile time, but will be runtime in the future
+		- the compiler doesn't know everything; this is a major source of superfluous round trips today
+			- dynamic linking - virtual methods - this is how lambdas work
+	- today, we focus on correct semantics. Now that we are useful in production, we will use production learnings to implement a planner that optimizes for real world conditions.
+- Electric Site Runtime
+	- Platform target sites (brower, server) that participate in the distributed VM
+- Missionary Reactor - FRP engine with glitch-free propagation
+	- holds the actual state of the site programs
+	- Java, JS implementations
+- JVM/Browser/Node

@@ -12,7 +12,7 @@
 		- How to reason about network transfers
 	- Guides
 		- Custom transit handlers
-		-
+		- How do I run a side effect when a dom node updates (so I can ask highlight.js to highlight the current node again)
 	- [[Reference]]
 	- [[Electric FAQ]]
 	- [[Examples]]

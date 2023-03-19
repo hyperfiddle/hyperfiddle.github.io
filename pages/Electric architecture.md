@@ -3,20 +3,16 @@
 	- define a distributed program in Clojure
 	- targets full compatibility with Clojure/Script
 		- means you can copy/paste a Clojure expression into an Electric expression and the expression will evaluate to the same result
-- **Clojure/Script**
-	- hosts Electric Clojure/Script programs
+- **Clojure/Script** hosts Electric Clojure/Script programs
+	-
 	- Electric is a Clojure/Script library
 		- Electric programs are defined in Clojure code files (.cljc, .clj, .cljs)
 		- the Electric compiler is implemented as an ordinary Clojure macro
-- **Electric Compiler**
-	- a Clojure -> "Electric bytecode" compiler
+- **Electric Compiler** = a Clojure -> "Electric bytecode" compiler
 	- implemented as a Clojure/Script macro
 	- implements clojure/script compiler & analyzer infrastructure for full compatibility with Clojure, including all special forms
-- **Electric bytecode**
-	- This is an Intermediate Representation) is the data structure or code used internally by a compiler or virtual machine to represent source code
-	- for Electric, this is "graph bytecode" for a distributed & reactive program
-- **Electric VM**
-	- a distributed VM.
+- **Electric bytecode** = "graph bytecode" for a distributed & reactive program
+- **Electric VM** = a distributed & reactive VM
 	- The VM models a computation spread across N concurrent sites (today N=2 - backend/frontend), with managed state sync.
 	- Managed network means the concrete distributed program matches the semantics of the intended abstract program as defined the source code, regardless of where the actual computation happens or how the state got synced.
 - **Network planner**

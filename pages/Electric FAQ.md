@@ -2,7 +2,10 @@
 	- [Hyperfiddle](https://www.hyperfiddle.net/) is a managed code playground for building cloud GUIs. Coming 2024! (This is how we pay for all the cool FOSS stuff)
 	- Electric Clojure is a reactive Clojure DSL that simplifies full-stack web development by seamlessly merging frontend and backend code, using a compiler to manage the frontend/backend boundary.
 - What are our current problems?
-	-
+	- error messages are not great
+		- we have line of sight to solving this
+		- already have async stack traces like React.js, they just need improvements
+		-
 - Tailwind
 - Beginner FAQ
   title:: Electric FAQ

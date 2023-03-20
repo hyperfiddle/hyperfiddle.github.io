@@ -12,10 +12,9 @@
 		- Electric currently performs a full rebuild with each change
 		- work around by commenting out parts of your app that you aren't actively developing
 		- also use a fast computer
-- Tailwind
+- Tailwind CSS - see guide (todo)
 - Beginner FAQ
   title:: Electric FAQ
-  collapsed:: true
 	- To a noob like me, can someone explain what joining the frontend and backend means? What is meant by abstracting the networking between frontend and backend?
 		- https://www.reddit.com/r/Clojure/comments/11ot83k/libraries_that_join_front_and_back_end/
 	- I don't get it, how is it different than X
@@ -23,7 +22,6 @@
 		- PHP doesn't reactively and selectively propagate changes between client and server, nor would it be feasible to write such a library in PHP itself. You could maybe achieve something similar with code generation of PHP and JS.
 		- PHP lets you have a piece of server code that can see the local variables of the client code it's enclosed in? And it's all reactive? That's amazing!
 - HN FAQ
-  collapsed:: true
 	- Objection: Separation of concerns?
 	  collapsed:: true
 		- code organization
@@ -63,7 +61,7 @@
 		- (communication fail) the datalog planner here making the cut across the network connection specifically to minimize data motion
 	- network unreliability, performance / chattiness
 		- network unreliability
-		  collapsed:: true
+			- https://www.reddit.com/r/Clojure/comments/vizdcc/hyperfiddlephoton_progress_update/
 			- https://www.reddit.com/r/Clojure/comments/vizdcc/hyperfiddlephoton_progress_update/idk0dy5/
 			- I think that several of the fallacies of distributed computing are being ignored here. https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing
 			- On the surface it looks really cool, but I'm deeply skeptical because they've intentionally put off handling what I think is the hardest part making the idea production ready: handling network unreliability.
@@ -161,7 +159,6 @@
 	  collapsed:: true
 		- https://clojurians.slack.com/archives/C7Q9GSHFV/p1678979540476409
 - Clojurist FAQ
-  collapsed:: true
 	- Hiccup
 	  collapsed:: true
 		- I think once it has a bit more reagent/hiccup support I could see myself plugging this into an existing project I'm working on for sections I want "live."  I could see using electric as my main websocket backend, running alongside my existing backend instead of going through the hassle of using sente and a mix of re-frame events/subs.
@@ -199,7 +196,6 @@
 	- https://www.reddit.com/r/Clojure/comments/uhdak7/uis_are_streaming_dags/
 	- https://www.reddit.com/r/Clojure/comments/wo43rw/clojure_single_codebase/
 	- network unreliability
-		- https://www.reddit.com/r/Clojure/comments/vizdcc/hyperfiddlephoton_progress_update/
 	- https://www.reddit.com/r/Clojure/comments/11ot83k/libraries_that_join_front_and_back_end/
 	- https://www.reddit.com/r/Clojure/comments/wejzdt/hyperfiddle_compiler_managed_network_connections/
 	- https://fullctxdev.substack.com/p/weekly-tech-hype-4

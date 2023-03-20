@@ -1,3 +1,1 @@
 - Two Clocks – Hello World
-- [[Key concepts]]
-- [[Key primitives]]

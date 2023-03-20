@@ -1,5 +1,4 @@
 - reactivity graph
-  collapsed:: true
 	- The key things I need to get is this with Electric Clojure being reactive and this DAG.
 	- Of course, they seem to be very interconnected, it is the DAG that makes EC reactive.
 	- When I look at a piece of EC code I am actually looking at the DAG, the EC compiler builds the DAG from that code.
@@ -9,7 +8,6 @@
 	- If I squint I can see a the signal as it travels through the DAG. It looks like a bolt of lightning. Is this why it is called Electric Clojure?
 - client/server transfer
 - everything is async
-  collapsed:: true
 	- That everything is reactive also means that it all is async.
 	- A call to a function will always be waiting. Is this true?
 	- And is it true even when the call is made to some piece of code that does not deal with any reactive data?

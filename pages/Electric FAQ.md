@@ -58,10 +58,11 @@
 		- This is cool, but how is state managed here? Does the server need to maintain any per-client state between renders? Does that have scalability or concurrency implications? I'm having trouble discerning the ramifications.
 			- https://news.ycombinator.com/item?id=31217448#31222862
 	- How does the network work?
+	  collapsed:: true
 		- (communication fail) the datalog planner here making the cut across the network connection specifically to minimize data motion
 	- network unreliability, performance / chattiness
+	  collapsed:: true
 		- network unreliability
-			- https://www.reddit.com/r/Clojure/comments/vizdcc/hyperfiddlephoton_progress_update/
 			- https://www.reddit.com/r/Clojure/comments/vizdcc/hyperfiddlephoton_progress_update/idk0dy5/
 			- I think that several of the fallacies of distributed computing are being ignored here. https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing
 			- On the surface it looks really cool, but I'm deeply skeptical because they've intentionally put off handling what I think is the hardest part making the idea production ready: handling network unreliability.
@@ -194,6 +195,7 @@
 - Triage
 	- https://www.reddit.com/r/Clojure/comments/ufbzp6/uis_are_streaming_dags_hyperfiddlephoton_a/
 	- https://www.reddit.com/r/Clojure/comments/uhdak7/uis_are_streaming_dags/
+	- https://www.reddit.com/r/Clojure/comments/vizdcc/hyperfiddlephoton_progress_update/
 	- https://www.reddit.com/r/Clojure/comments/wo43rw/clojure_single_codebase/
 	- network unreliability
 	- https://www.reddit.com/r/Clojure/comments/11ot83k/libraries_that_join_front_and_back_end/

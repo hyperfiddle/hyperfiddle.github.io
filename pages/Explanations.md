@@ -5,8 +5,9 @@
 	- [[Electric architecture]]
 	- Streaming lexical scope
 	- What is Multiplayer Native?
-	- Network planner
-		- Electric Clojure's network planner understands closures, loops, and deeply nested function calls, making it easier to manage client and server scope bindings.
+	- How does the network work?
+		- Network planner
+			- Electric Clojure's network planner understands closures, loops, and deeply nested function calls, making it easier to manage client and server scope bindings.
 - ClojureScript compatibility
 - [[Button callback explainer]]
 - How to reason about network transfers

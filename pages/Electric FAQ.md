@@ -8,10 +8,10 @@
 		- compiler errors - we will improve when we do incremental builds, which is coming
 		- safeguarding against common type errors - coming asap
 	- build times are slow
-		- no incremental builds yet - coming asap
-			- work around by commenting out parts of your app that you aren't actively developing
-				- Electric currently performs a full-program analysis with each
-			- also use a fast computer
+		- root cause is no incremental builds yet - coming asap
+		- Electric currently performs a full rebuild with each change
+		- work around by commenting out parts of your app that you aren't actively developing
+		- also use a fast computer
 - Tailwind
 - Beginner FAQ
   title:: Electric FAQ

@@ -4,8 +4,9 @@
 - What are our current problems?
 	- error messages are not great
 		- we have line of sight to solving this
-		- already have async stack traces like React.js, they just need improvements
-		-
+		- runtime errors - already have async stack traces like React.js, they just need improvements
+		- compiler errors - we will improve when we do incremental builds, which is coming
+		- safeguarding against type errors - lots of low hanging fruit, it's on the
 - Tailwind
 - Beginner FAQ
   title:: Electric FAQ

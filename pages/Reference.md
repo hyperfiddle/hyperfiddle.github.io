@@ -1,3 +1,1 @@
-- [[Key concepts]]
-- [[Key primitives]]
 - Architecture diagram

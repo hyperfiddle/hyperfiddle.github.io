@@ -6,7 +6,9 @@
 		- we have line of sight to solving this
 		- runtime errors - already have async stack traces like React.js, they just need improvements
 		- compiler errors - we will improve when we do incremental builds, which is coming
-		- safeguarding against type errors - lots of low hanging fruit, it's on the
+		- safeguarding against common type errors - coming asap
+	- build times are slow
+		- no incremental builds yet - coming asap
 - Tailwind
 - Beginner FAQ
   title:: Electric FAQ

@@ -9,6 +9,7 @@
 - **Electric Server** = websocket server for Electric clients
 	- Today supports Jetty 9 and Jetty 10
 	- ring-compatible
+	- Electric client and server must agree on what the program is
 - **Electric Compiler** = a Clojure -> "Electric bytecode" compiler
 	- implemented as an ordinary Clojure macro
 	- implements clojure/script compiler & analyzer infrastructure for full compatibility with Clojure, including all special forms

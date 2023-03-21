@@ -10,18 +10,20 @@
         constructor() { super(); }
 
         connectedCallback() {
+            this.innerHTML = `<b>Hello World</b>`
+
             // read attribute:
             // this.getAttribute('category')
             // e.g. <query-portal category="something" />
 
             // read text content
             // this.textContent
-
-            const query = `[:find (pull ?b [*])
-                        :where
-                        [?b :block/marker ?marker]
-                        [(contains? #{"NOW" "LATER" "TODO" "DOING"} ?marker)]]`;
-
+            //
+            // const query = `[:find (pull ?b [*])
+            //             :where
+            //             [?b :block/marker ?marker]
+            //             [(contains? #{"NOW" "LATER" "TODO" "DOING"} ?marker)]]`;
+            //
             // ;(async () => {
             //     try {
             //         // run query and get blocks
@@ -39,15 +41,15 @@
         //     return ret?.flat() // not groupped by page
         // }
 
-        render(blocks) {
-            const items = blocks.map(function (block) {
-                //return `<li>${JSON.stringify(block, 2, 2)}</li>`
-                return `<li>${block.content}</li>`
-            });
-
-            const template = `<ul>${items.join('')}</ul>`
-            this.innerHTML = template
-        }
+        // render(blocks) {
+        //     const items = blocks.map(function (block) {
+        //         //return `<li>${JSON.stringify(block, 2, 2)}</li>`
+        //         return `<li>${block.content}</li>`
+        //     });
+        //
+        //     const template = `<ul>${items.join('')}</ul>`
+        //     this.innerHTML = template
+        // }
     }
 
     window.customElements.define('query-portal', QueryPortal)

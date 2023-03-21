@@ -9,4 +9,3 @@
 	- [[Reference]] (accurate and complete details)
 	- [[Blog]]
 	- [[Support]]
-	- [:div "Hello " [:em "World!"]]

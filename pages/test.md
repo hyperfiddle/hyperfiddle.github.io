@@ -6,7 +6,7 @@ publish:: false
 - {renderer: :dustin}
 - @@html: <b>hi</b>@@
 - @@html: <query-portal /> @@
--
-- /insert query-portal
-- /Insert query-portal
+- [:b "hello"]
+- [:div {:is "query-portal"}]
+- @@html: <div is="query-portal" /> @@
 -

@@ -185,7 +185,8 @@
  ;; input "{{{poem red,blue}}}"
  ;; becomes
  ;; Rose is red, violet's blue. Life's ordered: Org assists you.
- :macros {}
+ :macros
+ {}
 
  ;; The default level to be opened for the linked references.
  ;; For example, if we have some example blocks like this:

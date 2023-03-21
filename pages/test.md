@@ -7,4 +7,6 @@ publish:: false
 - @@html: <b>hi</b>@@
 - @@html: <query-portal /> @@
 -
+- /insert query-portal
+- /Insert query-portal
 -

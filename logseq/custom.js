@@ -5,18 +5,18 @@
 
 //var logseq = document.querySelector('iframe[src*="custom-js"]').contentWindow.logseq;
 
+// this.getAttribute('category')
+// e.g. <query-portal category="something" />
+// this.textContent -- read text content
+
 (() => {
     class QueryPortal extends HTMLElement {
         constructor() { super(); }
         connectedCallback() {
-            // this.getAttribute('category')
-            // e.g. <query-portal category="something" />
-            // this.textContent -- read text content
+            console.warn('QueryPortal connected')
             this.innerHTML = `<b>Hello World</b>`
         }
     }
-
-    window.dustin = 42
-
+    console.log("custom script ran")
     window.customElements.define('query-portal', QueryPortal)
 })();

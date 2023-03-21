@@ -5,4 +5,5 @@ publish:: false
   ```
 - {renderer: :dustin}
 -
+- @@html: <b>hi</b>@@
 -

@@ -1,9 +1,12 @@
-publish:: false
-
 - What's the difference between Hyperfiddle and Electric Clojure?
 	- [Hyperfiddle](https://www.hyperfiddle.net/) is a managed code playground for building cloud GUIs. Coming 2024! (This is how we pay for all the cool FOSS stuff)
 	- Electric Clojure is a reactive Clojure DSL that simplifies full-stack web development by seamlessly merging frontend and backend code, using a compiler to manage the frontend/backend boundary.
+- To a noob like me, can someone explain what joining the frontend and backend means? What is meant by abstracting the networking between frontend and backend?
+	- https://www.reddit.com/r/Clojure/comments/11ot83k/libraries_that_join_front_and_back_end/jbx7hmc/?context=10000
+-
+-
 - What are our current problems?
+  collapsed:: true
 	- error messages are not great
 		- we have line of sight to solving this
 		- runtime errors - already have async stack traces like React.js, they just need improvements
@@ -14,11 +17,8 @@ publish:: false
 		- Electric currently performs a full rebuild with each change
 		- work around by commenting out parts of your app that you aren't actively developing
 		- also use a fast computer
-- Tailwind CSS - see guide (todo)
 - Beginner FAQ
-  title:: Electric FAQ
-	- To a noob like me, can someone explain what joining the frontend and backend means? What is meant by abstracting the networking between frontend and backend?
-		- https://www.reddit.com/r/Clojure/comments/11ot83k/libraries_that_join_front_and_back_end/
+  collapsed:: true
 	- I don't get it, how is it different than X
 		- I think I fail to see the advantage in the example given. Is the point that there's a server side call attached to the UI component directly? How is this any different than what can already be done with old school full stack like Rails or even smaller libraries like Sinatra/Flask.
 		- PHP doesn't reactively and selectively propagate changes between client and server, nor would it be feasible to write such a library in PHP itself. You could maybe achieve something similar with code generation of PHP and JS.
@@ -204,3 +204,9 @@ publish:: false
 	- https://www.reddit.com/r/Clojure/comments/wejzdt/hyperfiddle_compiler_managed_network_connections/
 	- https://fullctxdev.substack.com/p/weekly-tech-hype-4
 	- Routing? See the guide
+	- Deployment
+		- Also I though [fly.io](http://fly.io/) was always distributed? Do they have options for “traditional” deployment
+			- As i understand it, fly lets you choose which city you deploy in, and the idea is at scale you deploy dozens of "flyweight" instances spread across the globe
+			- global state is now an issue, you'd need to have a central database or other state store in the cloud that all the flys connect to
+			- if you choose a single fly instance in us east, and it happens that fly's datacenter in us east is 2ms away from AWS, that would feel like a traditional setup for your purposes iiuc
+			- Or you can just store your state in fly since you don't currently care about durability (meaning you lose state on restart)

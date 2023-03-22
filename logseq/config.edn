@@ -201,7 +201,7 @@
 
  :ref/linked-references-collapsed-threshold 50
 
- :favorites ["documentation — electric clojure" "electric clojure docs" "Electric Clojure" "How to take dummy notes?"]
+ :favorites ["electric clojure" "documentation — electric clojure" "electric clojure docs" "Electric Clojure" "How to take dummy notes?"]
  :publishing/all-pages-public? true
  :ui/show-brackets? false
  :feature/enable-journals? false

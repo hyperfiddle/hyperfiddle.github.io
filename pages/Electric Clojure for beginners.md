@@ -1,0 +1,11 @@
+- Why
+	- data sync
+	- composition
+	- functional programming
+	- reactive network
+- What
+	- reactive language
+	- react, solid
+	-
+- How
+	- clojure to DAG

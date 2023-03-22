@@ -1,6 +1,8 @@
-- Also I though [fly.io](http://fly.io/) was always distributed? Do they have options for “traditional” deployment
-	- As i understand it, fly lets you choose which city you deploy in, and the idea is at scale you deploy dozens of "flyweight" instances spread across the globe
-	- global state is now an issue, you'd need to have a central database or other state store in the cloud that all the flys connect to
-	- if you choose a single fly instance in us east, and it happens that fly's datacenter in us east is 2ms away from AWS, that would feel like a traditional setup for your purposes iiuc
-	- Or you can just store your state in fly since you don't currently care about durability (meaning you lose state on restart)
+- The starter app has a Dockerfile and batteries included CI/CD to fly.io
+	- https://github.com/hyperfiddle/electric-starter-app
 -
+- What are the server requirements for electric?
+	- Electric server currently targets the JVM.
+	- Node as a server is not supported yet.
+	- AWS lambda and serverless platforms are not supported yet, we'll take a look when a serious project brings us a specific use case.
+	- Architecture wise we are most excited about edge networks like fly.io (that deploy dozens of flyweight servers across the globe in cities close to users) which means the Electric client and Electric server are sub-10ms apart.

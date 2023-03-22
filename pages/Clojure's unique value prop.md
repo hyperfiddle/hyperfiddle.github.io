@@ -1,0 +1,7 @@
+- Clojure/Script's unique value prop is, imo:
+	- default immutability
+	- interop with host plastform ecosystem
+	- metaprogramming/compilers (extend the language, e.g. can make "reactive lambda")
+	- cross platform code sharing (i.e. unified client/server web app)
+	- thin abstraction / worse is better
+	- REPL / interactive development

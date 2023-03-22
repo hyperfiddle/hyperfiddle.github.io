@@ -1,6 +1,1 @@
-- what are the server requirements for electric? Can it be run with the backend in an AWS lambda, for example? Can the server be CLJS or does it have to be JVM Clojure?
-	- Electric server currently targets the JVM.
-	- Node as a server is not supported yet, though our test suite does pass on Node.
-	- Serverless platforms are not supported yet, we'll take a look when a serious project brings us a specific use case.
-	- Architecture wise I am most excited about edge networks like fly.io (that deploy dozens of flyweight servers across the globe in cities close to users) which mean the Electric client and Electric server are sub-10ms apart.
 -

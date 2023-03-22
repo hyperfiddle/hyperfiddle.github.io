@@ -1,3 +1,80 @@
 publish:: false
 
+- [[Electric Clojure for beginners]]
 -
+- Examples (for learning quickly)
+-
+- Electric is a reactive Clojure DSL for full-
+-
+- Triage
+	- [Hyperfiddle live-modeling POC](https://hyperfiddle.notion.site/Hyperfiddle-live-modeling-POC-3bdef327be3a425c867814c7d8919fe9)
+	- [Photon treeview](https://hyperfiddle.notion.site/Photon-treeview-4664bff9bd5b4e7897a1dddf641c344c)
+-
+- Guides
+	- [Full-stack webview with datascript](https://github.com/hyperfiddle/electric/blob/master/src-docs/user/demo_webview.cljc)
+	- [Routing integration - goog.history](https://github.com/hyperfiddle/electric/blob/master/src/contrib/electric_goog_history.cljc)
+	- [Multiplayer chat with presence](https://gist.github.com/dustingetz/3e0761f51137cbf945b701c3ce9e3c74)
+	- [SQL data backend](https://gist.github.com/dustingetz/1960436eb4044f65ddfcfce3ee0641b7)
+	- [virtual scroll internals](https://github.com/hyperfiddle/electric/blob/master/src-docs/user/demo_virtual_scroll.cljc)
+-
+- Streaming lexical scope
+- What is Multiplayer Native?
+- How does the network work?
+-
+-
+- Mission / what is Electric for?
+	- reduce LOC
+	- ultra-dynamic web apps, not websites
+-
+-
+- Electric Stack
+  collapsed:: true
+	- Leo: Clojure is not a distributed language, so the first part of the electric stack is to generate a program that can be run on several individual sites that coordinate.
+	- Leo: The compiler splits the program into two parts (for each peer), where each single peer program is aware of the indexing scheme of the remote part.
+	- Language that compiles down to "bytecode" for a distributed runtime (VM) which transparently orchestrates the IO outside of the programming language.
+	- Java -> JVM
+	- Erlang -> BEAM
+	- As a principle, there cannot be any round trips other than what is physically necessary (i.e. for a ping pong program). This is the goal we're trying to achieve, we're not quite there yet. There's a lot of science showing how to optimize a graph
+	- We think this is actually straightforward, given the DAG tells us everything we need to know and there is tons of CS graph theory on exactly this problem
+	- It's mostly about not doing stupid things.
+	- Internally, Electric compiles Clojure code down to a graph IR (intermediate representation). You can think of this as "reactive bytecode for a distributed machine." The graph cut is done at the IR layer.
+	- There is a distributed runtime orchestrating the IO. The Graph IR can be compiled down to reactive target code OR interpreted (today we compile to JS but interpret on the JVM).
+-
+- **Multiplayer-native:** Develop real-time multiplayer applications without any extra effort. The Electric reactivity graph can contain shared server state, which means that every application is automatically multiplayer-enabled, requiring no additional lines of code.
+- **Seamless network synchronization:** Electric automatically handles the complex details of client/server network sync, making it faster to develop real-time applications and ensuring that the data is always up-to-date and consistent across the entire application.
+-
+-
+- Key concepts - Pez
+	- Reactivity graph
+		- The key things I need to get is this with Electric Clojure being reactive and this DAG.
+		- Of course, they seem to be very interconnected, it is the DAG that makes Electric reactive.
+		- When I look at a piece of Electric code I am actually looking at the DAG, the Electric compiler builds the DAG from that code. Then it knows where in the graph each piece of (reactive) data flows.
+		- At runtime, if some source of data has new content, each place in the DAG where this data is used can be updated.
+		- The reaction is the result of a push, rather than a pull, and it is pushed only via the paths through the graph where there are things that need to react.
+		- If I squint I can see a the signal as it travels through the DAG. It looks like a bolt of lightning. Is this why it is called Electric Clojure?
+	- client/server transfer
+		- Electric Clojure's network planner understands closures, loops, and deeply nested function calls, making it easier to manage client and server scope bindings.
+	- everything is async
+		- That everything is reactive also means that it all is async.
+		- A call to a function will always be waiting. Is this true?
+		- And is it true even when the call is made to some piece of code that does not deal with any reactive data?
+		- Say (* (+ 1 2) 3). Will the * call be ”waiting” for the + to be ready?
+		- Or is it normal Clojure semantics there, that the inner function will be evaluated and then the outer, and there is no waiting going on?
+	- missionary
+		- stream, signal
+	- it's a compiler
+		- Evaluating a piece of electric code does not run it, right? It compiles it.
+		- So, in the editor, if I would evaluate som form inside an , it only compiles it.
+-
+-
+- Triage
+	- missionary
+		- https://clojureverse.org/t/does-clojure-script-have-its-own-framework-for-functional-event-streams/7956/5?u=dustingetz
+-
+- [[Button callback explainer]]
+- [[Clojure's unique value prop]]
+-
+- Perhaps we should include a macro for this, something like
+	- `(e/re-run! (highlight/highlightElement dom/node) project)`
+- which macroexpands something like
+	- `((fn [project] (highlight/highlightElement dom/node)) project)`

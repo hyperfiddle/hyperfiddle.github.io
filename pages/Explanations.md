@@ -1,20 +1,11 @@
-- Mission / what is Electric for?
-	- reduce LOC
-	- ultra-dynamic web apps, not websites
 - Big picture design
-	- [UIs are streaming DAGs (10min video + transcript) (2022)](https://hyperfiddle.notion.site/UIs-are-streaming-DAGs-e181461681a8452bb9c7a9f10f507991)
+	- [UIs are streaming DAGs (2022)](https://hyperfiddle.notion.site/UIs-are-streaming-DAGs-e181461681a8452bb9c7a9f10f507991)
 	- [You don't need a web framework, you need a web language (2021)](https://hyperfiddle.notion.site/Reactive-Clojure-You-don-t-need-a-web-framework-you-need-a-web-language-44b5bfa526be4af282863f34fa1cfffc)
 - What you need to know
-	- [[Key concepts]]
-	- [[Key primitives — Electric Clojure]]
+	- [[Key primitives]]
 - How it works
-	- [[Electric architecture]]
-	- Streaming lexical scope
-	- What is Multiplayer Native?
-	- How does the network work?
-		- Network planner
-			- Electric Clojure's network planner understands closures, loops, and deeply nested function calls, making it easier to manage client and server scope bindings.
-- ClojureScript compatibility
-- [[Button callback explainer]]
-- How to reason about network transfers
+	- [[Electric internal architecture]]
+	- ...
+- What is "Clojure/Script compatibility"?
+- How to reason about network transfers?
 -

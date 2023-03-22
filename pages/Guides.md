@@ -1,6 +1,6 @@
-- Custom transit handlers
-- [[How do I run a dom side effect when something changes?]]
 - [[Routing]]
 - [[Deployment]]
-- [[Debugging]]
-- Tailwind
+- Reagent interop? see [demo-reagent-interop](https://github.com/hyperfiddle/electric/blob/master/src-docs/user/demo_reagent_interop.cljc)
+- [[How do I run a dom side effect when something changes?]]
+- Custom transit handlers? see [demo-custom-types](https://github.com/hyperfiddle/electric/blob/master/src-docs/wip/demo_custom_types.cljc)
+- Tailwind? coming soon

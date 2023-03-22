@@ -1,12 +1,26 @@
-- First run the demos
-	- ...
-- Then clone the starter app
-	- ...
-- Dev workflow / IDE setup
-	- Cursive
-		- indentation
-		- resolve thing
-		- don't auto-save
+- Start by running the demos on your machine. They also serve as tutorials. You should read and understand each one, they are designed for teaching!
+-
+- # How to run the demos
+	- `git clone git@github.com:hyperfiddle/electric.git`
+	- `cd electric`
+	- `clj -A:dev -X user/main` — serves demos at http://localhost:8080
+	- [src-docs](https://github.com/hyperfiddle/electric/tree/master/src-docs) folder has the demos, please explore!
+		- please explore!
+		- view them in the order that they are listed at http://localhost:8080
+-
+- # How to jack into REPL with demos
+	- Jack in with `dev` alias
+		- do NOT let your editor auto-start a shadow-cljs build, just use an ordinary Clojure REPL. It's critical that shadow-cljs share the same JVM as your editor REPL, otherwise the Electric frontend and backend code will disalign and you will see weird errors
+	- run `(main)` from `user.clj` to compile and serve the app
+		- (main) will run shadow
+		- see [src-dev/user.clj](https://github.com/hyperfiddle/electric/blob/master/src-dev/user.clj) and [user.cljs](https://github.com/hyperfiddle/electric/blob/master/src-dev/user.cljs)
+-
+- # IDE setup
+	- [[Cursive IDE setup]]
+	- [[Emacs IDE setup]]
 	- use shadow hot code reloading
 	- it's not enough to send form to repl, due to how the compiler works (we can probably fix it )
 	- deep def works, println works
+-
+- # Starter app repo
+	- https://github.com/hyperfiddle/electric-starter-app

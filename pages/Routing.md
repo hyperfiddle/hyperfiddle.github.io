@@ -1,2 +1,7 @@
-- html5 router
-	- https://gist.github.com/nakkaya/fb5acbebf8ff7a4f468fa92b6a0b7342
+- Start with a simple [goog.history integration](https://github.com/hyperfiddle/electric/blob/master/src/contrib/electric_goog_history.cljc)
+- The demo app uses an experimental hyperfiddle.history module ([example usage](https://github.com/hyperfiddle/electric/blob/7ef1612c9659d1e88f2f41223f5c7c045a5eb399/src-docs/user_main.cljc#L88-L97)), which we don't recommend you use, because it's more complex to configure than we like. Expect breaking changes.
+-
+- **Q:** How can I relocate an electric app to an other context root, not "/" ? Is there something in the "build" to do so?
+- Electric itself doesn't know about the page's path. There are two places in userland application code that relate to the path:
+	- index.html or other userland page entrypoint which boots the Electric client, e.g. [user.cljs](https://github.com/hyperfiddle/electric-starter-app/blob/main/src/user.cljs#L16-L18) - you can call this from anywhere, Electric doesn't care, it will connect by websocket protocol and doesn't interact with any ordinary http endpoints.
+	- Application router code done from inside the Electric application. The starter app doesn't even include a router and never looks at the path (browse around the starter app src [here](https://github.com/hyperfiddle/electric-starter-app/tree/main/src)). I'd recommend using a simple [goog.history integration](https://github.com/hyperfiddle/electric/blob/master/src/contrib/electric_goog_history.cljc), you can modify that to deal with chopping off any parent routes

@@ -6,3 +6,28 @@
 	- Node as a server is not supported yet.
 	- AWS lambda and serverless platforms are not supported yet, we'll take a look when a serious project brings us a specific use case.
 	- Architecture wise we are most excited about edge networks like fly.io (that deploy dozens of flyweight servers across the globe in cities close to users) which means the Electric client and Electric server are sub-10ms apart.
+-
+- What is the deployment architecture?
+	- Electric is embedded in Clojure and therefore uses the exact same deployment methods that Clojure web apps do.
+	- See the electric-starter-app [Dockerfile](https://github.com/hyperfiddle/electric-starter-app/blob/main/Dockerfile), [build scripts](https://github.com/hyperfiddle/electric-starter-app/tree/main/src-build) and [Github Actions config](https://github.com/hyperfiddle/electric-starter-app/blob/main/.github/workflows/deploy.yml).
+-
+- What host do you recommend?
+	- fly.io is $5.70/mo for 1GB ram.
+		- Our demos app runs on this and consumes about 600mb ram.
+		- 30ms cross-atlantic ping (Philadelphia<>Paris)
+	- Railway has 200ms ping on free tier so we don't recommend this.
+	- Render.app - have not tried
+	- Google Cloud Run - have not tried
+-
+- What is fly.io and how is it different than traditional deployment?
+	- Fly is an edge network. It lets you select which cities to deploy in so that your servers are as close as possible to your users.
+	- The idea is, at scale, to deploy dozens of "flyweight" instances spread across the globe, co-located with your users for the fastest possible experience.
+	- Benefits:
+		- Fly is easy
+		- Fly gives you the lowest possible latency for the Electric client/server, which matters if you're building a collaborative and interactive application like Notion or Google Sheets.
+		- Note that Electric Clojure includes a network optimizer, so if you're writing business apps, optimizing latency is not that important.
+	- Tradeoffs:
+		- Fly is not inside AWS, you'd expose AWS resources over public internet (or use Tailscale VPN)
+		- Shared global state is now an issue, you'd need to have a central database or other state store in the cloud that all the flys connect to.
+			- if you choose e.g. a single fly instance in US East, as it happens fly's datacenter in US East is 2ms away from AWS, so that would feel like a traditional setup.
+			- In development, you can just store your state in fly since you don't currently care about durability (meaning you lose state on restart)

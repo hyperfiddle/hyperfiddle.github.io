@@ -13,4 +13,9 @@
 	- **Eliminate request waterfalls and N+1 problem:**
 	- **Leverages the power of Clojure:** By extending Clojure, Electric inherits all of the language's powerful features, such as immutability, functional programming, seamless Java and JavaScript interop, cross-platform code sharing, and concise syntax, to create an expressive and productive full-stack web development experience.
 -
-- ELI5
+-
+- FAQ: To a noob like me, can someone explain what joining the frontend and backend means? What is meant by abstracting the networking between frontend and backend?
+	- [See this reddit answer](https://www.reddit.com/r/Clojure/comments/11ot83k/libraries_that_join_front_and_back_end/jbx7hmc/?context=10000)
+- FAQ: What's the difference between Hyperfiddle and Electric Clojure?
+	- [Hyperfiddle](https://www.hyperfiddle.net/) is (will be) a managed code playground for building cloud GUIs, powered by Electric. Coming 2024!
+	- Electric Clojure is a FOSS Clojure/Script library for developing full-stack web applications.

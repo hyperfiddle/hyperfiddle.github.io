@@ -7,6 +7,7 @@ publish:: false
 - @@html: <b>hi</b>@@
 - @@html: <query-portal /> @@
 - [:b "hello"]
-- [:div {:is "query-portal"}]
+	- [:div {:is "query-portal"}] `user/two-clocks
 - @@html: <div is="query-portal" /> @@
+-
 -

@@ -1,3 +1,5 @@
+publish:: false
+
 - Why / mission / goals
 	- Ultra-dynamic applications have severe data sync challenges.
 	- Problem statement: the code we wish we could write

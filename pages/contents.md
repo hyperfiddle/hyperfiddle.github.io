@@ -2,10 +2,11 @@
 	- [[Demos]]
 	- Examples
 	- [[Getting Started]]
-	- Tutorial
+	- [[Tutorial]]
 	- [[Explanations]]
 	- [[Guides]]
 	- FAQ
 	- Reference
 	- [[Blog]]
 	- [[Support]]
+- Hyperfiddle

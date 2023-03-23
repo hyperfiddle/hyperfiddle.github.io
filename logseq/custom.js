@@ -10,7 +10,7 @@
 // this.textContent -- read text content
 
 (() => {
-    class QueryPortal extends HTMLElement {
+    class QueryPortal extends HTMLDivElement {
         constructor() { super(); }
         connectedCallback() {
             console.warn('QueryPortal connected')
@@ -18,5 +18,5 @@
         }
     }
     console.log("custom script ran")
-    window.customElements.define('query-portal', QueryPortal)
+    window.customElements.define('query-portal', QueryPortal, {extends: 'div'})
 })();

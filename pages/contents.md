@@ -1,6 +1,6 @@
 - [[Electric Clojure]]
 	- [[Demos]]
-	- Examples
+	- [[Examples]]
 	- [[Getting Started]]
 	- [[Tutorial]]
 	- [[Explanations]]

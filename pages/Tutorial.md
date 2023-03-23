@@ -1,4 +1,4 @@
-- Two Clocks – Hello World
+- [[Two Clocks]] (hello world)
 - [Todos Simple](https://github.com/hyperfiddle/electric/blob/master/src-docs/user/demo_todos_simple.cljc)
 - [Full-stack webview with datascript](https://github.com/hyperfiddle/electric/blob/master/src-docs/user/demo_webview.cljc)
 - [Routing integration - goog.history](https://github.com/hyperfiddle/electric/blob/master/src/contrib/electric_goog_history.cljc)

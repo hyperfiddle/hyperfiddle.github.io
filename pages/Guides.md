@@ -1,6 +1,8 @@
-- [[Routing]]
 - [[Deployment]]
-- Reagent interop? see [demo-reagent-interop](https://github.com/hyperfiddle/electric/blob/master/src-docs/user/demo_reagent_interop.cljc)
-- [[How do I run a dom side effect when something changes?]]
+- [[Routing]]
+- Reagent interop? see tutorial
 - Custom transit handlers? see [demo-custom-types](https://github.com/hyperfiddle/electric/blob/master/src-docs/wip/demo_custom_types.cljc)
+- [SQL data backend](https://gist.github.com/dustingetz/1960436eb4044f65ddfcfce3ee0641b7)
+- [virtual scroll internals](https://github.com/hyperfiddle/electric/blob/master/src-docs/user/demo_virtual_scroll.cljc)
+- [[How do I run a dom side effect when something changes?]]
 - Tailwind? coming soon

@@ -1,3 +1,0 @@
-- two clocks
-- @@html: <iframe src="http://localhost:8080/user.demo-two-clocks!TwoClocks/app" style="margin:0" /> @@
-- @@html: <iframe src="http://localhost:8080/user.demo-two-clocks!TwoClocks/code" style="margin:0" /> @@

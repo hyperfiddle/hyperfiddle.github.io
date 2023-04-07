@@ -1,27 +1,26 @@
-- Start by running the demos on your machine. They also serve as tutorials. You should read and understand each one, they are designed for teaching!
+- Do the tutorial. Then clone one of the starter apps.
 -
-- # How to run the demos
-	- `git clone git@github.com:hyperfiddle/electric.git`
-	- `cd electric`
-	- `clj -A:dev -X user/main` — serves demos at http://localhost:8080
-	- [src-docs](https://github.com/hyperfiddle/electric/tree/master/src-docs) folder has the demos, please explore!
-		- please explore!
-		- view them in the order that they are listed at http://localhost:8080
+- # Tutorial
+	- Tutorial app: https://electric-examples-app.fly.dev/
+	- Old demo app: https://electric-demo.fly.dev/ (these are being migrated into tutorials)
 -
-- # How to jack into REPL with demos
+- # Starter app repos
+	- [Electric starter app](https://github.com/hyperfiddle/electric-starter-app)
+	- [Electric XTDB starter](https://github.com/hyperfiddle/electric-xtdb-starter)
+-
+- # How to jack in your Clojure REPL
 	- Jack in with `dev` alias
-		- do NOT let your editor auto-start a shadow-cljs build, just use an ordinary Clojure REPL. It's critical that shadow-cljs share the same JVM as your editor REPL, otherwise the Electric frontend and backend code will disalign and you will see weird errors
+		- **do NOT let your editor auto-start a shadow-cljs build, just use an ordinary Clojure REPL**
+			- It's critical that shadow-cljs share the same JVM as your editor REPL, otherwise the Electric frontend and backend code will disalign and you will see weird errors!
 	- run `(main)` from `user.clj` to compile and serve the app
 		- (main) will run shadow
-		- see [src-dev/user.clj](https://github.com/hyperfiddle/electric/blob/master/src-dev/user.clj) and [user.cljs](https://github.com/hyperfiddle/electric/blob/master/src-dev/user.cljs)
+		- see [user.clj](https://github.com/hyperfiddle/electric-starter-app/blob/main/src/user.clj) and [user.cljs](https://github.com/hyperfiddle/electric-starter-app/blob/main/src/user.cljs) in the starter app
 -
 - # IDE setup
 	- [[Cursive IDE setup]]
 	- [[Emacs IDE setup]]
 	- [[Calva IDE setup]]
 	- use shadow hot code reloading
-	- it's not enough to send form to repl, due to how the compiler works (we can probably fix it )
+	- it's not enough to send form to repl, due to how the compiler works today (we can probably fix it)
 	- deep def works, println works
 -
-- # Starter app repo
-	- https://github.com/hyperfiddle/electric-starter-app

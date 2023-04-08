@@ -1,12 +1,13 @@
 - Hyperfiddle
 - HFQL
-- [[Electric Clojure]]
+- Electric Clojure
 	- [Tutorial](https://electric-examples-app.fly.dev/)
-	- [[Getting Started]]
-	- Explanations
-	- [[Guides]]
-	- FAQ
+	- [[Quickstart]]
+	- What is Electric Clojure?
 	- Troubleshooting
+	- [[How-to guides]]
+	- Explanations
+	- FAQ
 	- Reference
 - [[Blog]]
 - [[Support]]

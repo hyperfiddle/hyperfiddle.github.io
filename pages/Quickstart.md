@@ -1,14 +1,11 @@
-- Do the tutorial. Then clone one of the starter apps.
--
-- # Tutorial
-	- Tutorial app: https://electric-examples-app.fly.dev/
-	- Old demo app: https://electric-demo.fly.dev/ (these are being migrated into tutorials)
--
-- # Starter app repos
+- 1. Read the [tutorial](https://electric-examples-app.fly.dev/)
+- 2. Review the [live demos](https://electric-demo.fly.dev/) (these are gradually being migrated into tutorials but not all are migrated yet)
+- 3. Clone one of the starter apps:
 	- [Electric starter app](https://github.com/hyperfiddle/electric-starter-app)
 	- [Electric XTDB starter](https://github.com/hyperfiddle/electric-xtdb-starter)
+- 4. "Jack-in" your editor into a project Clojure REPL
 -
-- # How to jack in your Clojure REPL
+- ## How to jack in your Clojure REPL?
 	- Jack in with `dev` alias
 		- **do NOT let your editor auto-start a shadow-cljs build, just use an ordinary Clojure REPL**
 			- It's critical that shadow-cljs share the same JVM as your editor REPL, otherwise the Electric frontend and backend code will disalign and you will see weird errors!
@@ -16,7 +13,7 @@
 		- (main) will run shadow
 		- see [user.clj](https://github.com/hyperfiddle/electric-starter-app/blob/main/src/user.clj) and [user.cljs](https://github.com/hyperfiddle/electric-starter-app/blob/main/src/user.cljs) in the starter app
 -
-- # IDE setup
+- ## IDE setup
 	- [[Cursive IDE setup]]
 	- [[Emacs IDE setup]]
 	- [[Calva IDE setup]]

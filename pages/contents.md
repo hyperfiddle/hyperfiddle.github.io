@@ -1,4 +1,5 @@
 - Hyperfiddle
+	- [Hyperfiddle progress update – Feb 2023](https://hyperfiddle.notion.site/Hyperfiddle-progress-update-Feb-2023-8cc45f9da47c4719bb16851d129e3a3d)
 - HFQL
 - Electric Clojure
 	- [Electric Live Tutorial](https://electric-examples-app.fly.dev/)
@@ -17,12 +18,18 @@
 		- [[How do I run a dom side effect when something changes?]]
 		- Tailwind? coming soon
 	- Explanations
+		- [Signals vs Streams](https://www.dustingetz.com/#/page/signals%20vs%20streams%2C%20in%20terms%20of%20backpressure%20(2023))
 		- electric-dom introduction
 		- electric-ui introduction
 		- Electric internal architecture
+		- [Clojureverse launch discussion (2023)](https://clojureverse.org/t/electric-clojure-a-signals-dsl-for-fullstack-web-ui/9788/29)
+		- [UIs are streaming DAGs (10min video + transcript) (2022)](https://hyperfiddle.notion.site/UIs-are-streaming-DAGs-e181461681a8452bb9c7a9f10f507991)
+		- [You don't need a web framework, you need a web language (2021)](https://hyperfiddle.notion.site/Reactive-Clojure-You-don-t-need-a-web-framework-you-need-a-web-language-44b5bfa526be4af282863f34fa1cfffc)
 	- FAQ
 	- Reference
-- [[Blog]]
+	- Other content
+		- [Electric progress update – Dec 2022](https://hyperfiddle.notion.site/Electric-progress-update-Dec-2022-5416dda526e24e5ab7ccb7eb48c797ed)
+		- [Electric progress update – June 2022](https://hyperfiddle.notion.site/Photon-progress-June-2022-57aee367c20e45b3b80366d1abe4fbc3)
 - Support
 	- Support chatroom: `#hyperfiddle` @ clojurians.net
 	- follow [https://twitter.com/dustingetz](https://twitter.com/dustingetz) for announcements

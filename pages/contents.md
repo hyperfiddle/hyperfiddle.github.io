@@ -1,6 +1,6 @@
-- Hyperfiddle
-	- [Hyperfiddle progress update – Feb 2023](https://hyperfiddle.notion.site/Hyperfiddle-progress-update-Feb-2023-8cc45f9da47c4719bb16851d129e3a3d)
-- HFQL
+- Community
+	- Slack: `#hyperfiddle` @ clojurians.net
+	- follow [https://twitter.com/dustingetz](https://twitter.com/dustingetz) for announcements
 - Electric Clojure
 	- [Electric Live Tutorial](https://electric-examples-app.fly.dev/)
 	- [[Quickstart]]
@@ -30,6 +30,5 @@
 	- Other content
 		- [Electric progress update – Dec 2022](https://hyperfiddle.notion.site/Electric-progress-update-Dec-2022-5416dda526e24e5ab7ccb7eb48c797ed)
 		- [Electric progress update – June 2022](https://hyperfiddle.notion.site/Photon-progress-June-2022-57aee367c20e45b3b80366d1abe4fbc3)
-- Support
-	- Support chatroom: `#hyperfiddle` @ clojurians.net
-	- follow [https://twitter.com/dustingetz](https://twitter.com/dustingetz) for announcements
+- Hyperfiddle
+	- [Hyperfiddle progress update – Feb 2023](https://hyperfiddle.notion.site/Hyperfiddle-progress-update-Feb-2023-8cc45f9da47c4719bb16851d129e3a3d)

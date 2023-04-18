@@ -1,5 +1,5 @@
-- 1. Read the [tutorial](https://electric-examples-app.fly.dev/)
-- 2. Review the [live demos](https://electric-demo.fly.dev/) (these are gradually being migrated into tutorials but not all are migrated yet)
+- 1. Read the [Electric Live Tutorial](https://electric-examples-app.fly.dev/)
+- 2. Review the [Electric Live Demos](https://electric-demo.fly.dev/) (these are mostly migrated into tutorials but a few remain)
 - 3. Clone one of the starter apps:
 	- [Electric starter app](https://github.com/hyperfiddle/electric-starter-app)
 	- [Electric XTDB starter](https://github.com/hyperfiddle/electric-xtdb-starter)

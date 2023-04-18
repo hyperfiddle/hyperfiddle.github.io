@@ -1,3 +1,0 @@
-- Electric [Changelog](https://github.com/hyperfiddle/electric/blob/master/docs/CHANGELOG.md)
-- Support chatroom: `#hyperfiddle` @ clojurians.net
-- follow [https://twitter.com/dustingetz](https://twitter.com/dustingetz) for announcements

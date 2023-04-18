@@ -4,6 +4,7 @@
 	  collapsed:: true
 		- We capitalize them (like react components)
 	- new
+	  collapsed:: true
 		- Electric uses new to call electric functions
 			- (e/defn Teeshirt-orders-view [x] ...)
 			  (Teeshirt-orders-view. x)

@@ -1,13 +1,28 @@
 - Hyperfiddle
 - HFQL
 - Electric Clojure
-	- [Tutorial](https://electric-examples-app.fly.dev/)
+	- [Electric Live Tutorial](https://electric-examples-app.fly.dev/)
 	- [[Quickstart]]
 	- What is Electric Clojure?
-	- Troubleshooting
-	- [[How-to guides]]
+	- [[Troubleshooting]]
+		- [Electric Changelog](https://github.com/hyperfiddle/electric/blob/master/docs/CHANGELOG.md)
+		- ((642f2d7e-0fb2-428b-9bbb-3517f3b919d9))
+	- How-to guides
+		- [[Deployment]]
+		- [[Routing]]
+		- [React/Reagent interop](https://electric-examples-app.fly.dev/user.demo-reagent-interop!ReagentInterop)
+		- [Custom transit handlers](https://github.com/hyperfiddle/electric/blob/master/src-docs/wip/demo_custom_types.cljc)
+		- [SQL data backend](https://gist.github.com/dustingetz/1960436eb4044f65ddfcfce3ee0641b7)
+		- [virtual scroll internals](https://github.com/hyperfiddle/electric/blob/master/src-docs/user/demo_virtual_scroll.cljc)
+		- [[How do I run a dom side effect when something changes?]]
+		- Tailwind? coming soon
 	- Explanations
+		- electric-dom introduction
+		- electric-ui introduction
+		- Electric internal architecture
 	- FAQ
 	- Reference
 - [[Blog]]
-- [[Support]]
+- Support
+	- Support chatroom: `#hyperfiddle` @ clojurians.net
+	- follow [https://twitter.com/dustingetz](https://twitter.com/dustingetz) for announcements

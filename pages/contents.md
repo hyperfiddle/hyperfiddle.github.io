@@ -3,6 +3,7 @@
 	- follow [https://twitter.com/dustingetz](https://twitter.com/dustingetz) for announcements
 - Electric Clojure
 	- [Electric Live Tutorial](https://electric-examples-app.fly.dev/)
+	- https://github.com/hyperfiddle/electric
 	- [[Quickstart]]
 	- What is Electric Clojure?
 	- [[Troubleshooting]]
@@ -26,6 +27,8 @@
 		- [UIs are streaming DAGs (10min video + transcript) (2022)](https://hyperfiddle.notion.site/UIs-are-streaming-DAGs-e181461681a8452bb9c7a9f10f507991)
 		- [You don't need a web framework, you need a web language (2021)](https://hyperfiddle.notion.site/Reactive-Clojure-You-don-t-need-a-web-framework-you-need-a-web-language-44b5bfa526be4af282863f34fa1cfffc)
 	- FAQ
+		- ((643fee7f-8eb2-4066-bf4c-3db4e0a2c06c))
+		- ((643fe93f-8534-4315-a318-ddf71c0daa20))
 	- Reference
 	- Other content
 		- [Electric progress update – Dec 2022](https://hyperfiddle.notion.site/Electric-progress-update-Dec-2022-5416dda526e24e5ab7ccb7eb48c797ed)

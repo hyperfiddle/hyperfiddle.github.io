@@ -1,0 +1,6 @@
+- Discussions
+	- https://clojurians.slack.com/archives/C7Q9GSHFV/p1682786697009099
+	- [SQL data backend](https://gist.github.com/dustingetz/1960436eb4044f65ddfcfce3ee0641b7)
+- Problems
+	- "messy query refresh problem"
+		- i don’t see how a command pattern solves the messy query refresh problem, in the worst case someone can make a one off edit via pgadmin gui and your queries need to refresh, in the best case where you just promise to only write via commands you can probably inspect the transaction to decide which views to query

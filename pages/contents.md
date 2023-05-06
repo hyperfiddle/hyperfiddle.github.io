@@ -10,16 +10,21 @@
 		- [Electric Changelog](https://github.com/hyperfiddle/electric/blob/master/docs/CHANGELOG.md)
 		- ((642f2d7e-0fb2-428b-9bbb-3517f3b919d9))
 		- ((6456707b-72aa-4897-8935-95acfc4849f3))
+		- ((645670dd-98a8-4c15-bd25-9fd44bcd517d))
+		- Don't block, e.g. don't use Thread/sleep
+		- ((64567f50-8f32-4023-87e6-32283a6b1833))
 	- How-to guides
 		- [React/Reagent interop](https://electric-examples-app.fly.dev/user.demo-reagent-interop!ReagentInterop)
 		- Tailwind? coming soon
 		- [[Deployment]]
 		- [[Routing]]
 		- [Custom transit handlers](https://github.com/hyperfiddle/electric/blob/master/src-docs/wip/demo_custom_types.cljc)
-		- [SQL data backend](https://gist.github.com/dustingetz/1960436eb4044f65ddfcfce3ee0641b7)
 		- [[Run a dom side effect when something changes]]
 		- [[Connect Electric code to a Javascript callback]]
 		- [virtual scroll internals](https://github.com/hyperfiddle/electric/blob/master/src-docs/user/demo_virtual_scroll.cljc)
+		- [[Use Electric with a non-reactive DB]]
+		- [[Forms]]? Coming soon
+		- [[XTDB]]
 	- Explanations
 		- [Signals vs Streams](https://www.dustingetz.com/#/page/signals%20vs%20streams%2C%20in%20terms%20of%20backpressure%20(2023))
 		- electric-dom introduction
@@ -32,7 +37,7 @@
 		- ((643fee7f-8eb2-4066-bf4c-3db4e0a2c06c))
 		- ((643fe93f-8534-4315-a318-ddf71c0daa20))
 		- ((643173b8-aa0d-44f7-a669-737fce8e5771))
-	- Reference
+	- [[Reference]]
 	- Other content
 		- [Electric progress update – Dec 2022](https://hyperfiddle.notion.site/Electric-progress-update-Dec-2022-5416dda526e24e5ab7ccb7eb48c797ed)
 		- [Electric progress update – June 2022](https://hyperfiddle.notion.site/Photon-progress-June-2022-57aee367c20e45b3b80366d1abe4fbc3)

@@ -1,10 +1,11 @@
 - Architecture diagram
 - hyperfiddle.electric
 	- e/defn
-	  collapsed:: true
 		- We capitalize them (like react components)
+		- evaluation rules
+			- https://gist.github.com/dustingetz/a6f4f8abd62eec4e2a5a4c91b2f9a3cd
+			- https://clojurians.slack.com/archives/C7Q9GSHFV/p1681912874990159
 	- new
-	  collapsed:: true
 		- Electric uses new to call electric functions
 			- (e/defn Teeshirt-orders-view [x] ...)
 			  (Teeshirt-orders-view. x)
@@ -18,5 +19,16 @@
 	- e/client, e/server
 	- e/for-by
 	- e/on-unmount
+	- do
+		- (do (dom/div) (dom/div)) will mount both divs. think of them as components not statements. if they contain reactive dependencies then they will be maintained concurrently. Note that (do (println 1) (println 2)) will mount the printlns in order (and then never touch them again as the exprs are constant), so this is backwards compatible with clojure
+	- try/catch
+		- https://clojurians.slack.com/archives/C7Q9GSHFV/p1682972314489469
+- missionary
+	- m/observe
+		- m/observe is the key primitive that adapts an event listener callback interface to a discrete flow, note m/observe also forces you to define the cleanup code in the same place to unregister the callback and destroy the codemirror (which missionary will call during teardown)
 - hyperfiddle.electric-dom2
+	- reactive point writes orchestrated by Electric
+	- dom/node
+	- dom/text
+		- Think of (dom/text x) as having the same evaluation rules as (println x)
 - hyperfiddle.ui4

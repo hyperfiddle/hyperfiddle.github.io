@@ -1,8 +1,10 @@
 - Hiccup support?
   id:: 643fee7f-8eb2-4066-bf4c-3db4e0a2c06c
+  collapsed:: true
 	- See https://github.com/hyperfiddle/electric/issues/32
 - You say the client/server boundary is inferred, but it seems like you're explicitly marking the boundaries?
   id:: 643fe93f-8534-4315-a318-ddf71c0daa20
+  collapsed:: true
 	- From the clock tutorial:
 		- > The Electric compiler infers the backend/frontend boundary and generates the full-stack app (client and server that coordinate)
 	- But in the code, it appears that we're explicitly marking those boundaries

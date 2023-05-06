@@ -2,22 +2,24 @@
 	- Slack: `#hyperfiddle` @ clojurians.net
 	- follow [https://twitter.com/dustingetz](https://twitter.com/dustingetz) for announcements
 - Electric Clojure
-	- [Electric Live Tutorial](https://electric-examples-app.fly.dev/)
 	- https://github.com/hyperfiddle/electric
+	- [Electric Live Tutorial](https://tutorial.hyperfiddle.net/)
 	- [[Quickstart]]
 	- What is Electric Clojure?
 	- [[Troubleshooting]]
 		- [Electric Changelog](https://github.com/hyperfiddle/electric/blob/master/docs/CHANGELOG.md)
 		- ((642f2d7e-0fb2-428b-9bbb-3517f3b919d9))
+		- ((6456707b-72aa-4897-8935-95acfc4849f3))
 	- How-to guides
+		- [React/Reagent interop](https://electric-examples-app.fly.dev/user.demo-reagent-interop!ReagentInterop)
+		- Tailwind? coming soon
 		- [[Deployment]]
 		- [[Routing]]
-		- [React/Reagent interop](https://electric-examples-app.fly.dev/user.demo-reagent-interop!ReagentInterop)
 		- [Custom transit handlers](https://github.com/hyperfiddle/electric/blob/master/src-docs/wip/demo_custom_types.cljc)
 		- [SQL data backend](https://gist.github.com/dustingetz/1960436eb4044f65ddfcfce3ee0641b7)
+		- [[Run a dom side effect when something changes]]
+		- [[Connect Electric code to a Javascript callback]]
 		- [virtual scroll internals](https://github.com/hyperfiddle/electric/blob/master/src-docs/user/demo_virtual_scroll.cljc)
-		- [[How do I run a dom side effect when something changes?]]
-		- Tailwind? coming soon
 	- Explanations
 		- [Signals vs Streams](https://www.dustingetz.com/#/page/signals%20vs%20streams%2C%20in%20terms%20of%20backpressure%20(2023))
 		- electric-dom introduction
@@ -29,6 +31,7 @@
 	- FAQ
 		- ((643fee7f-8eb2-4066-bf4c-3db4e0a2c06c))
 		- ((643fe93f-8534-4315-a318-ddf71c0daa20))
+		- ((643173b8-aa0d-44f7-a669-737fce8e5771))
 	- Reference
 	- Other content
 		- [Electric progress update – Dec 2022](https://hyperfiddle.notion.site/Electric-progress-update-Dec-2022-5416dda526e24e5ab7ccb7eb48c797ed)

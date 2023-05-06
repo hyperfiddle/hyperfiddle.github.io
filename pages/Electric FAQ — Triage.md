@@ -18,6 +18,8 @@
 		- PHP lets you have a piece of server code that can see the local variables of the client code it's enclosed in? And it's all reactive? That's amazing!
 - HN FAQ
   collapsed:: true
+	- SSR?
+		- Frontend-focused question: one of the tradeoffs I wonder about is, does a tool support server rendered HTML? If the answer is "no", that's fine, it would just be nice to know, this isn't what you reach for with a project where SEO is a player.
 	- Objection: Separation of concerns?
 	  collapsed:: true
 		- code organization
@@ -184,6 +186,7 @@
 		- future: JIT, dynamic linking (means do more network planning at runtime - like JVM)
 		- this is fine and probably the end state
 - Triage
+  collapsed:: true
 	- https://www.reddit.com/r/Clojure/comments/ufbzp6/uis_are_streaming_dags_hyperfiddlephoton_a/
 	- https://www.reddit.com/r/Clojure/comments/uhdak7/uis_are_streaming_dags/
 	- https://www.reddit.com/r/Clojure/comments/vizdcc/hyperfiddlephoton_progress_update/
@@ -193,3 +196,6 @@
 	- https://fullctxdev.substack.com/p/weekly-tech-hype-4
 	- Deployment
 		- Also I though [fly.io](http://fly.io/) was always distributed? Do they have options for “traditional” deployment
+	- https://www.reddit.com/r/Clojure/comments/12lzasz/electric_clojure_second_batch_of_tutorials/
+- Praise
+	- I've been impressed at how principled the library is about not having opinions about how server logic is structured or stored. An atom is good as a database is good as a stream or hardcoded list. There's a lot of quality thought in this library.

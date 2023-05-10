@@ -33,11 +33,13 @@
 		- [Clojureverse launch discussion (2023)](https://clojureverse.org/t/electric-clojure-a-signals-dsl-for-fullstack-web-ui/9788/29)
 		- [UIs are streaming DAGs (10min video + transcript) (2022)](https://hyperfiddle.notion.site/UIs-are-streaming-DAGs-e181461681a8452bb9c7a9f10f507991)
 		- [You don't need a web framework, you need a web language (2021)](https://hyperfiddle.notion.site/Reactive-Clojure-You-don-t-need-a-web-framework-you-need-a-web-language-44b5bfa526be4af282863f34fa1cfffc)
-	- FAQ
+	- [[Reference]]
+		- ((645badcc-deba-4f2c-b551-e3bdca23b05e))
+	- [FAQ](Electric FAQ)
 		- ((643fee7f-8eb2-4066-bf4c-3db4e0a2c06c))
+		- ((645baf1a-3dd5-428a-9f2c-53bfec69b425))
 		- ((643fe93f-8534-4315-a318-ddf71c0daa20))
 		- ((643173b8-aa0d-44f7-a669-737fce8e5771))
-	- [[Reference]]
 	- Other content
 		- [Electric progress update – Dec 2022](https://hyperfiddle.notion.site/Electric-progress-update-Dec-2022-5416dda526e24e5ab7ccb7eb48c797ed)
 		- [Electric progress update – June 2022](https://hyperfiddle.notion.site/Photon-progress-June-2022-57aee367c20e45b3b80366d1abe4fbc3)

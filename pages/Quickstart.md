@@ -6,6 +6,7 @@
 - 4. "Jack-in" your editor into a project Clojure REPL
 -
 - ## How to jack in your Clojure REPL?
+  id:: 6423359e-9573-420e-9166-b217797b02c4
 	- Jack in with `dev` alias
 		- **do NOT let your editor auto-start a shadow-cljs build, just use an ordinary Clojure REPL**
 			- It's critical that shadow-cljs share the same JVM as your editor REPL, otherwise the Electric frontend and backend code will disalign and you will see weird errors!
@@ -14,6 +15,7 @@
 		- see [user.clj](https://github.com/hyperfiddle/electric-starter-app/blob/main/src/user.clj) and [user.cljs](https://github.com/hyperfiddle/electric-starter-app/blob/main/src/user.cljs) in the starter app
 -
 - ## IDE setup
+  id:: 6423359e-c353-49f5-b9aa-9cab8d71576f
 	- [[Cursive IDE setup]]
 	- [[Emacs IDE setup]]
 	- [[Calva IDE setup]]

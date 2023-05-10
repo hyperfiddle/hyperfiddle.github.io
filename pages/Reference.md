@@ -52,3 +52,4 @@
 - missionary
 	- m/observe
 		- m/observe is the key primitive that adapts an event listener callback interface to a discrete flow, note m/observe also forces you to define the cleanup code in the same place to unregister the callback and destroy the codemirror (which missionary will call during teardown)
+		- `(m/observe (fn [!] (def ! !) #()))`

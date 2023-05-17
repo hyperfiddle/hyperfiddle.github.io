@@ -3,7 +3,7 @@
 	- follow [https://twitter.com/dustingetz](https://twitter.com/dustingetz) for announcements
 - Electric Clojure
 	- https://github.com/hyperfiddle/electric
-	- [Electric Live Tutorial](https://tutorial.hyperfiddle.net/)
+	- [Electric Live Tutorial](https://electric.hyperfiddle.net/)
 	- [[Quickstart]]
 		- ((6423359e-9573-420e-9166-b217797b02c4))
 		- ((6423359e-c353-49f5-b9aa-9cab8d71576f))

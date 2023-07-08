@@ -43,6 +43,7 @@
 		- ((643fe93f-8534-4315-a318-ddf71c0daa20))
 		- ((643173b8-aa0d-44f7-a669-737fce8e5771))
 	- Other content
+		- [[Electric Clojure – Visual Tools meetup – July 7, 2023]]
 		- [Electric progress update – Dec 2022](https://hyperfiddle.notion.site/Electric-progress-update-Dec-2022-5416dda526e24e5ab7ccb7eb48c797ed)
 		- [Electric progress update – June 2022](https://hyperfiddle.notion.site/Photon-progress-June-2022-57aee367c20e45b3b80366d1abe4fbc3)
 - Hyperfiddle

@@ -7,32 +7,47 @@
 	- Electric is a Clojure/Script library
 	- Electric programs are defined in Clojure code files (.cljc, .clj, .cljs)
 - **Electric Server** = websocket server for Electric clients
-	- Today supports Jetty 9 and Jetty 10
 	- ring-compatible
+	- just a websocket middleware to embed in your existing app server (e.g. Jetty)
+	- we test with: Jetty 10, Jetty 9 (for java8 compat), and HttpKit
 - **Electric Compiler** = a Clojure -> "Electric bytecode" compiler
 	- implemented as an ordinary Clojure macro
-	- implements clojure/script compiler & analyzer infrastructure for full compatibility with Clojure, including all special forms
-- **Electric bytecode** = "graph bytecode" for a distributed & reactive program
+	- implements clojure/script compiler & analyzer infrastructure for full* compatibility with Clojure//Script, including all** [special forms](https://clojure.org/reference/special_forms)
+		- *we target "99%" Clojure/Script compatibility, including interop, clojure.core, pre-existing macros (e.g. `->>`), core.match.
+		- **exclusions are generally anything bound to the Java concurrency model, i.e. `monitor-enter`, `future`, etc
+- **Electric bytecode / IR** = "graph bytecode" for a distributed & reactive program
+	- graph bytecode example: [electric-compiler-internals.cljc](https://github.com/hyperfiddle/electric/blob/master/src-docs/user/electric/electric_compiler_internals.cljc)
+	- IR models a **DAG**, though the runtime supports **cycles** by side effect, and likely cycles should be reified in the IR to facilitate analysis.
+	- cycles model local state without atoms. Under the reactive evaluation model, cycles and atoms are essentially equivalent.
 - **Electric VM** = a distributed & reactive VM
-	- The VM models a computation spread across N concurrent sites (today N=2 - backend/frontend), with managed state sync.
-	- Managed network means the concrete distributed program matches the semantics of the intended abstract program as defined the source code, regardless of where the actual computation happens or how the state got synced.
+	- The VM models a computation spread across N concurrent *sites*, with managed state sync between them. Today N=2 : backend/frontend, N will eventually be arbitrary.
+	- **Managed network** means the concrete distributed program matches the semantics of the  abstract program as defined the source code, regardless of where the actual computation happens or how the state got synced.
+	- **Network-transparent composition** means the Electric functions transmit data over the network (as implied by the AST) in a way which is invisible to the application programmer.
 - **Network planner** = the part of the VM that finds the optimal cut
-	- operates on IR
+	- operates on electric bytecode
 		- This is the same as Java: there are optimizations performed by the compiler and also the runtime.
-		- PG as a query planner to choose the fastest query
+		- Broadyly, compare to how PostgreSQL as a query planner chooses the fastest way to satisfy a query
 		- Electric has a network planner to choose the optimal network transfers
 	- today the cut is computed at compile time, but will be runtime in the future
 		- the compiler doesn't know everything; this is the main source of superfluous round trips today
-			- dynamic linking - virtual methods - this is how lambdas work
+			- consider dynamic linking - virtual methods - this is how lambdas work
 	- today, we focus on correct language semantics over optimal network topology. Now that we are useful in production, we will use production learnings to implement a planner that optimizes for real world conditions.
-		- it is already quite good in practice
-		- the demo of virtual scroll over node_modules streams thousands of records between client/server as you drag the scrollbar, it feels great
+		- performance is already quite excellent in practice, better than hand-coded IO in any webapp we've ever encountered as consultants. correct concurrency is just too hard
+		- the [demo of virtual scroll over node_modules](https://electric-demo.fly.dev/(user.demo-explorer!DirectoryExplorer)) streams thousands of records between client/server as you drag the scrollbar, it feels great, some flicker at this level of stress due to a bug that we will address if it still exists after the next major release lands
 - **Electric Site Runtime**
-	- Platform target sites (brower, server) that participate in the distributed VM
-- **Missionary Reactor**
-	- FRP engine with glitch-free propagation
-	- holds the actual runtime state of each site process
+	- Platform target sites (browser, server) that participate in the distributed VM
+	- ClojureScript runtime compiles DAG bytecode to Missionary combinators, which compiles to javascript under "cljs advanced mode" optimizations – dead code elimination etc
+	- Clojure runtime interprets DAG bytecode and resolves Clojure vars at runtime, this means the server can be generic if the client is permitted to supply the DAG!
+- **Missionary** – reactive engine
+	- Missionary is a **functional effect system**, advertising:
+		- glitch-free reactive propagation
+		- cancellation
+		- resource lifecycle (RAII) – strong resource cleanup guarantees
+		- correct error handling by default (process supervision)
+		- composability – all primitives are referentially transparent where appropriate
+		- rigorous set of concurrency and backpressure combinators
+		- portable – Java and JS implementation
+	- Missionary holds the actual runtime state of each site process
 		- server state, one reactor per websocket session
 		- client state, one reactor in the browser
-	- Java, JS implementations
 - **JVM/Browser/Node**
